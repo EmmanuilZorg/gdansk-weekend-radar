@@ -14,8 +14,16 @@
       <label class="search"><span>⌕</span><input id="search" placeholder="поиск по событию или месту" /></label>
       <div class="filter-row"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="free">Бесплатно</button><button class="filter" data-filter="solo">Solo-friendly</button><button class="filter" data-filter="outdoor">На улице</button></div>
     </section>
-    <button id="refreshBtn" class="ghost-btn" type="button">Обновить данные</button>
+    <button id="sourcesBtn" class="ghost-btn" type="button">Источники</button><button id="refreshBtn" class="ghost-btn" type="button">Обновить данные</button>
   </header>
+  <div id="sourcesModal" class="sources-modal" hidden>
+    <div class="sources-backdrop" data-close-sources></div>
+    <aside class="sources-drawer" role="dialog" aria-modal="true" aria-labelledby="sourcesTitle">
+      <div class="sources-head"><div><p class="calendar-label">ОТКУДА БЕРУТСЯ ДАННЫЕ</p><h2 id="sourcesTitle">Источники</h2></div><button class="close-btn" type="button" data-close-sources aria-label="Закрыть">×</button></div>
+      <p class="sources-intro">Открытые календари и каналы, которые проверяет сборщик. Нажмите на источник, чтобы открыть первоисточник.</p>
+      <div id="sourcesList" class="sources-list"><p class="sources-loading">Загрузка…</p></div>
+    </aside>
+  </div>
   <main class="shell">
     <div id="notice" class="notice" hidden></div>
     <div class="content-layout">
