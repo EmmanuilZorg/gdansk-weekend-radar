@@ -1,0 +1,8 @@
+[
+  {"name":"Официальный календарь Gdańsk.pl","url":"https://www.gdansk.pl/wydarzenia","type":"official"},
+  {"name":"Open House Worldwide Gdańsk","url":"https://www.openhouseworldwide.org/gdansk","type":"official"},
+  {"name":"Telegram Aktualności Trójmiasto","url":"https://t.me/s/trojmiast0?q=%23event","type":"telegram"},
+  {"name":"Informator Pomorza","url":"https://www.informator-pomorza.pl/artykul/co-robic-w-weekend-9-11-pazdziernika-najciekawsze-wydarzenia-w-trojmiescie","type":"polish"},
+  {"name":"Trojmiasto events","url":"https://www.trojmiasto.pl/imprezy/","type":"polish"},
+  {"name":"POLMIC","url":"https://polmic.pl/pl/dzieje-sie/vi-choralna-masa-krytyczna-charytatywny-koncert-finalowy","type":"polish"}
+]
