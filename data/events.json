@@ -1,37 +1,59 @@
 {
   "meta": {
-    "lastChecked": "10.10.2026, 14:34",
+    "lastChecked": "10.10.2026, 16:20",
     "weekend": "10–11 октября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 6,
-    "newEvents": 0,
+    "sourcesChecked": 9,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
-        "status": 200
+        "status": 200,
+        "parser": "json-ld"
       },
       {
         "name": "Open House Worldwide Gdańsk",
-        "status": 200
+        "status": 200,
+        "parser": "json-ld"
       },
       {
         "name": "Telegram Aktualności Trójmiasto",
-        "status": 200
+        "status": 200,
+        "parser": "json-ld"
       },
       {
         "name": "Informator Pomorza",
-        "status": 200
+        "status": 200,
+        "parser": "json-ld"
       },
       {
         "name": "Trojmiasto events",
-        "status": 403
+        "status": 403,
+        "parser": "json-ld"
       },
       {
         "name": "POLMIC",
-        "status": 403
+        "status": 403,
+        "parser": "json-ld"
+      },
+      {
+        "name": "Eventbrite — события в Gdańsk",
+        "status": 200,
+        "parser": "eventbrite"
+      },
+      {
+        "name": "Kultura.pl / Culture.pl — календарь событий",
+        "status": 200,
+        "parser": "kultura.pl"
+      },
+      {
+        "name": "Europejskie Centrum Solidarności — события",
+        "status": 200,
+        "parser": "json-ld"
       }
-    ]
+    ],
+    "targetWeekend": "2026-10-10 / 2026-10-11"
   },
   "events": [
     {
@@ -169,6 +191,24 @@
       ],
       "description": "Финальный благотворительный концерт современной хоровой музыки; сбор средств для фонда Hakersi.",
       "source": "https://polmic.pl/pl/dzieje-sie/vi-choralna-masa-krytyczna-charytatywny-koncert-finalowy"
+    },
+    {
+      "id": "auto-RXZlbnRicml0ZSDigJQg0YHQ",
+      "title": "Uncover Gdansk’s secrets with an immersive escape game adventure!",
+      "date": "2026-10-11",
+      "time": "уточняется",
+      "place": "Wały Jagiellońskie 2a",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "Eventbrite"
+      ],
+      "description": "Найдено специализированным парсером Eventbrite — события в Gdańsk; проверьте условия на странице события.",
+      "source": "https://www.eventbrite.sg/e/uncover-gdansks-secrets-with-an-immersive-escape-game-adventure-tickets-2001965169714"
     }
   ]
 }

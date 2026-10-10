@@ -8,34 +8,114 @@ const current = JSON.parse(await fs.readFile(eventsPath, 'utf8'));
 const sources = JSON.parse(await fs.readFile(sourcesPath, 'utf8'));
 const checked = [];
 const discovered = [];
+const USER_AGENT = 'gdansk-weekend-radar/1.1 (+GitHub Actions; public event indexer)';
+
+function dateOnly(date) {
+  return new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Warsaw', year:'numeric', month:'2-digit', day:'2-digit'}).format(date);
+}
+function weekendDates() {
+  const now = new Date();
+  const weekday = new Intl.DateTimeFormat('en-US', {timeZone:'Europe/Warsaw', weekday:'short'}).format(now);
+  const day = ({Sun:1,Mon:2,Tue:3,Wed:4,Thu:5,Fri:6,Sat:7})[weekday];
+  const daysToSaturday = day === 1 ? 6 : day === 7 ? 0 : 7 - day;
+  const saturday = new Date(now.getTime() + daysToSaturday * 86400000);
+  const sunday = new Date(saturday.getTime() + 86400000);
+  return new Set([dateOnly(saturday), dateOnly(sunday)]);
+}
+const targetDates = weekendDates();
+
+function parseJsonScripts(html) {
+  const values = [];
+  for (const match of html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try { values.push(JSON.parse(match[1].trim())); } catch {}
+  }
+  for (const match of html.matchAll(/<script[^>]+id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try { values.push(JSON.parse(match[1].trim())); } catch {}
+  }
+  return values;
+}
+function flatten(value, out = []) {
+  if (!value || typeof value !== 'object' || out.length > 5000) return out;
+  if (Array.isArray(value)) { for (const item of value) flatten(item, out); return out; }
+  out.push(value);
+  for (const child of Object.values(value)) if (child && typeof child === 'object') flatten(child, out);
+  return out;
+}
+function text(value) { return typeof value === 'string' ? value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : ''; }
+function eventDate(value) {
+  const raw = String(value || '');
+  const iso = raw.match(/\d{4}-\d{2}-\d{2}/)?.[0];
+  if (iso) return iso;
+  const eu = raw.match(/(?:^|\D)(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?:\D|$)/);
+  if (eu) return `${eu[3]}-${eu[2].padStart(2,'0')}-${eu[1].padStart(2,'0')}`;
+  return '';
+}
+function eventTime(value) { return String(value || '').match(/T(\d{2}:\d{2})/)?.[1] || String(value || '').match(/(?:^|\s)(\d{1,2}:\d{2})(?:\s|$)/)?.[1] || 'уточняется'; }
+function locationName(location) {
+  if (typeof location === 'string') return text(location);
+  return text(location?.name) || text(location?.address?.name) || text(location?.address?.addressLocality) || 'место уточняется';
+}
+function makeEvent(source, item, override = {}) {
+  const start = item.startDate || item.start_date || item.startTime || item.date || override.date;
+  const date = eventDate(start);
+  if (!date || !targetDates.has(date)) return null;
+  const title = text(item.name || item.title || item.eventName || override.title);
+  if (!title || !/gdańsk|gdansk|trójmiasto|trojmiasto/i.test(`${title} ${locationName(item.location || item.venue || item.place)}`) && source.type !== 'eventbrite' && source.type !== 'kultura.pl') return null;
+  const url = item.url || item.link || override.url || source.url;
+  const description = text(item.description || item.summary || override.description) || `Найдено специализированным парсером ${source.name}; проверьте условия на странице события.`;
+  const location = locationName(item.location || item.venue || item.place || override.place);
+  return {id:`auto-${Buffer.from(`${source.name}-${title}-${date}-${url}`).toString('base64url').slice(0,24)}`,title,date,time:eventTime(start),place:location,area:'Gdańsk / Trójmiasto',free:/free|bezpłat|darmow|wstęp wolny/i.test(`${item.offers?.price || ''} ${description}`),price:'уточняется',solo:true,outdoor:false,registration:false,tags:[source.type === 'eventbrite' ? 'Eventbrite' : source.type === 'kultura.pl' ? 'kultura.pl' : 'автосбор'],description,source:url};
+}
+function fromStructuredData(source, html) {
+  const result = [];
+  for (const value of parseJsonScripts(html)) {
+    for (const item of flatten(value)) {
+      if (item['@type'] === 'Event' || item.startDate || item.start_date || item.eventName) {
+        const event = makeEvent(source, item);
+        if (event) result.push(event);
+      }
+    }
+  }
+  return result;
+}
+function parseEventbrite(source, html) {
+  // Eventbrite exposes event cards through JSON-LD and, on some responses, __NEXT_DATA__.
+  return fromStructuredData(source, html);
+}
+function parseKultura(source, html) {
+  // Culture.pl uses JSON-LD for detail pages and embedded event objects on its calendar page.
+  const result = fromStructuredData(source, html);
+  for (const match of html.matchAll(/(?:data-date|data-event-date|eventDate|startDate)["'=:\s]+["']?([^"'<>\s,}]+)/gi)) {
+    const date = eventDate(match[1]);
+    if (!targetDates.has(date)) continue;
+    const around = html.slice(Math.max(0, match.index - 700), match.index + 1000);
+    const title = text(around.match(/<(?:h2|h3|h4)[^>]*>([\s\S]*?)<\/(?:h2|h3|h4)>/i)?.[1]);
+    if (title) { const event = makeEvent(source, {title,date,description:'Найдено в календаре Kultura.pl',link:source.url}); if (event) result.push(event); }
+  }
+  return result;
+}
+function parseSource(source, html) {
+  if (source.type === 'eventbrite') return parseEventbrite(source, html);
+  if (source.type === 'kultura.pl') return parseKultura(source, html);
+  return fromStructuredData(source, html);
+}
 
 for (const source of sources) {
   try {
-    const res = await fetch(source.url, {headers:{'user-agent':'gdansk-weekend-radar/1.0 (+GitHub Actions)'}});
-    checked.push({name:source.name,status:res.status});
+    const res = await fetch(source.url, {headers:{'user-agent':USER_AGENT, 'accept-language':'pl,en;q=0.8'}});
+    checked.push({name:source.name,status:res.status,parser:source.type === 'eventbrite' ? 'eventbrite' : source.type === 'kultura.pl' ? 'kultura.pl' : 'json-ld'});
     if (!res.ok) continue;
     const html = await res.text();
-    // Lightweight discovery: preserve only JSON-LD events that explicitly match the configured weekend.
-    const blocks = [...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
-    for (const match of blocks) {
-      try {
-        const value = JSON.parse(match[1].trim());
-        const list = Array.isArray(value) ? value : (value['@graph'] || [value]);
-        for (const item of list) {
-          const start = String(item.startDate || '');
-          if (!start.startsWith('2026-10-10') && !start.startsWith('2026-10-11')) continue;
-          if (!item.name) continue;
-          discovered.push({id:`auto-${Buffer.from(`${source.name}-${item.name}-${start}`).toString('base64url').slice(0,20)}`,title:item.name,date:start.slice(0,10),time:start.slice(11,16)||'уточняется',place:item.location?.name || item.location?.address?.addressLocality || 'место уточняется',area:'Gdańsk / Trójmiasto',free:false,price:'уточняется',solo:true,outdoor:false,registration:false,tags:['автосбор'],description:'Найдено в структурированных данных источника; проверьте условия на странице события.',source:source.url});
-        }
-      } catch {}
-    }
+    discovered.push(...parseSource(source, html));
   } catch (error) {
     checked.push({name:source.name,status:'error',error:String(error)});
   }
 }
-const existingIds = new Set(current.events.map(e=>e.id));
-const newEvents = discovered.filter(e=>!existingIds.has(e.id));
+
+const unique = [...new Map(discovered.map(event => [event.id, event])).values()];
+const existingIds = new Set(current.events.map(e => e.id));
+const newEvents = unique.filter(e => !existingIds.has(e.id));
 current.events = [...current.events, ...newEvents].sort((a,b)=>`${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
-current.meta = {...current.meta,lastChecked:new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Warsaw',dateStyle:'short',timeStyle:'short'}).format(new Date()),lastRun:'github-actions',sourcesChecked:checked.length,newEvents:newEvents.length,sourceStatus:checked};
+current.meta = {...current.meta,lastChecked:new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Warsaw',dateStyle:'short',timeStyle:'short'}).format(new Date()),lastRun:'github-actions',targetWeekend:[...targetDates].join(' / '),sourcesChecked:checked.length,newEvents:newEvents.length,sourceStatus:checked};
 await fs.writeFile(eventsPath, JSON.stringify(current,null,2)+'\n');
-console.log(JSON.stringify({checked:checked.length,newEvents:newEvents.length,checkedSources:checked},null,2));
+console.log(JSON.stringify({targetWeekend:[...targetDates],checked:checked.length,newEvents:newEvents.length,checkedSources:checked},null,2));
