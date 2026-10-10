@@ -6,5 +6,6 @@
   {"name":"Trojmiasto events","url":"https://www.trojmiasto.pl/imprezy/","type":"polish"},
   {"name":"POLMIC","url":"https://polmic.pl/pl/dzieje-sie/vi-choralna-masa-krytyczna-charytatywny-koncert-finalowy","type":"polish"},
   {"name":"Eventbrite — события в Gdańsk","url":"https://www.eventbrite.com/d/poland--gda%C5%84sk/events/","type":"eventbrite"},
-  {"name":"Kultura.pl / Culture.pl — календарь событий","url":"https://culture.pl/pl/wydarzenia","type":"kultura.pl"}
+  {"name":"Kultura.pl / Culture.pl — календарь событий","url":"https://culture.pl/pl/wydarzenia","type":"kultura.pl"},
+  {"name":"Europejskie Centrum Solidarności — события","url":"https://ecs.gda.pl/","type":"official"}
 ]
