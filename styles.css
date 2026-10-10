@@ -19,3 +19,6 @@
 /* Keep the right action stack out of normal flow so the title starts near the date */
 .event-card{position:relative}.event-card .card-actions{position:absolute;top:18px;right:19px;width:92px}.event-card h2,.event-card .meta,.event-card .description{max-width:calc(100% - 112px)}
 @media(max-width:720px){.event-card h2,.event-card .meta,.event-card .description{max-width:100%}.event-card .card-actions{right:18px}}
+
+/* Let each event card end at its content instead of filling the grid row */
+.events{align-items:start}.event-card{min-height:0}
