@@ -12,6 +12,30 @@ export function warsawDate(date = new Date()) {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
+export function warsawTime(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: TIME_ZONE, hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map(({type, value}) => [type, value]));
+  return `${values.hour}:${values.minute}`;
+}
+
+function eventEndTime(event) {
+  const times = [...String(event.time || '').matchAll(/(?:^|[^\d])(\d{1,2})[.:](\d{2})/g)];
+  if (!times.length) return '';
+  const end = times.length > 1 ? times[times.length - 1] : times[0];
+  return `${end[1].padStart(2, '0')}:${end[2]}`;
+}
+
+export function isEventUpcoming(event, now = new Date()) {
+  const today = warsawDate(now);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(event.date)) return false;
+  if (event.date > today) return true;
+  if (event.date < today) return false;
+  const endTime = eventEndTime(event);
+  return !endTime || endTime >= warsawTime(now);
+}
+
 export function upcomingWeekend(date = new Date()) {
   const today = warsawDate(date);
   const [year, month, day] = today.split('-').map(Number);
@@ -36,8 +60,13 @@ export function formatWeekend([saturday, sunday]) {
   return `${satDay} ${satMonth} — ${sunDay} ${sunMonth} ${sunYear}`;
 }
 
-export function retainUpcomingEvents(events, today = warsawDate()) {
-  return events.filter(event => /^\d{4}-\d{2}-\d{2}$/.test(event.date) && event.date >= today);
+export function retainUpcomingEvents(events, today = warsawDate(), time = warsawTime()) {
+  return events.filter(event => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(event.date) || event.date < today) return false;
+    if (event.date > today) return true;
+    const endTime = eventEndTime(event);
+    return !endTime || endTime >= time;
+  });
 }
 
 export function formatWeekendTab(date, weekday) {

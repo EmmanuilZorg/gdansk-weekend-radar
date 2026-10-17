@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {formatWeekend, retainUpcomingEvents, upcomingWeekend, warsawDate} from '../weekend.mjs';
+import {formatWeekend, isEventUpcoming, retainUpcomingEvents, upcomingWeekend, warsawDate} from '../weekend.mjs';
 
 test('Friday and Saturday belong to the same upcoming weekend', () => {
   assert.deepEqual(upcomingWeekend(new Date('2026-10-16T10:00:00Z')), ['2026-10-17', '2026-10-18']);
@@ -28,4 +28,20 @@ test('only valid events happening today or later are retained', () => {
     {id: 'invalid', date: 'not-a-date'},
   ];
   assert.deepEqual(retainUpcomingEvents(events, '2026-10-17').map(event => event.id), ['today', 'future']);
+});
+
+test('same-day events disappear after their end time in Warsaw', () => {
+  const now = new Date('2026-10-17T17:20:00Z');
+  assert.equal(isEventUpcoming({date: '2026-10-17', time: '19:00'}, now), false);
+  assert.equal(isEventUpcoming({date: '2026-10-17', time: '18:00–19:45'}, now), true);
+  assert.equal(isEventUpcoming({date: '2026-10-17', time: '20:00'}, now), true);
+});
+
+test('collector prunes ended same-day events while preserving future times', () => {
+  const events = [
+    {id: 'ended', date: '2026-10-17', time: '19:00'},
+    {id: 'ongoing', date: '2026-10-17', time: '18:00–19:45'},
+    {id: 'later', date: '2026-10-17', time: '20.00'},
+  ];
+  assert.deepEqual(retainUpcomingEvents(events, '2026-10-17', '19:20').map(event => event.id), ['ongoing', 'later']);
 });

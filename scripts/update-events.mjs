@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {formatWeekend, retainUpcomingEvents, upcomingWeekend, warsawDate} from '../weekend.mjs';
+import {extractGdanskEventCards} from './gdansk-parser.mjs';
 
 const root = process.cwd();
 const eventsPath = path.join(root, 'data/events.json');
@@ -51,7 +52,7 @@ function makeEvent(source, item, override = {}) {
   const date = eventDate(start);
   if (!date || !targetDates.has(date)) return null;
   const title = text(item.name || item.title || item.eventName || override.title);
-  if (!title || !/gdańsk|gdansk|trójmiasto|trojmiasto/i.test(`${title} ${locationName(item.location || item.venue || item.place)}`) && source.type !== 'eventbrite' && source.type !== 'kultura.pl') return null;
+  if (!title || !/gdańsk|gdansk|trójmiasto|trojmiasto/i.test(`${title} ${locationName(item.location || item.venue || item.place)}`) && !['eventbrite','kultura.pl','official'].includes(source.type)) return null;
   const url = item.url || item.link || override.url || source.url;
   const description = text(item.description || item.summary || override.description) || `Найдено специализированным парсером ${source.name}; проверьте условия на странице события.`;
   const location = locationName(item.location || item.venue || item.place || override.place);
@@ -88,13 +89,23 @@ function parseKultura(source, html) {
 function parseSource(source, html) {
   if (source.type === 'eventbrite') return parseEventbrite(source, html);
   if (source.type === 'kultura.pl') return parseKultura(source, html);
-  return fromStructuredData(source, html);
+  const result = fromStructuredData(source, html);
+  if (source.url.includes('gdansk.pl/wydarzenia')) {
+    for (const item of extractGdanskEventCards(html, targetDates)) {
+      const event = makeEvent(source, {...item, startDate: item.time === 'уточняется' ? item.date : `${item.date}T${item.time}`, location: 'Gdańsk', description: 'Официальная карточка события на портале города Гданьска.'});
+      if (event) {
+        event.tags = ['городской календарь', 'автосбор'];
+        result.push(event);
+      }
+    }
+  }
+  return result;
 }
 
 for (const source of sources) {
   try {
     const res = await fetch(source.url, {headers:{'user-agent':USER_AGENT, 'accept-language':'pl,en;q=0.8'}});
-    checked.push({name:source.name,status:res.status,parser:source.type === 'eventbrite' ? 'eventbrite' : source.type === 'kultura.pl' ? 'kultura.pl' : 'json-ld'});
+    checked.push({name:source.name,status:res.status,parser:source.url.includes('gdansk.pl/wydarzenia') ? 'gdansk-calendar' : source.type === 'eventbrite' ? 'eventbrite' : source.type === 'kultura.pl' ? 'kultura.pl' : 'json-ld'});
     if (!res.ok) continue;
     const html = await res.text();
     discovered.push(...parseSource(source, html));
@@ -107,7 +118,13 @@ const unique = [...new Map(discovered.map(event => [event.id, event])).values()]
 const retainedEvents = retainUpcomingEvents(current.events, today);
 const removedEvents = current.events.length - retainedEvents.length;
 const existingIds = new Set(retainedEvents.map(e => e.id));
-const newEvents = unique.filter(e => !existingIds.has(e.id));
+const eventKeys = new Set(retainedEvents.map(e => `${e.title.trim().toLocaleLowerCase('ru-RU')}|${e.date}`));
+const newEvents = unique.filter(event => {
+  const key = `${event.title.trim().toLocaleLowerCase('ru-RU')}|${event.date}`;
+  if (existingIds.has(event.id) || eventKeys.has(key)) return false;
+  eventKeys.add(key);
+  return true;
+});
 current.events = [...retainedEvents, ...newEvents].sort((a,b)=>`${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
 current.meta = {...current.meta,lastChecked:new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Warsaw',dateStyle:'short',timeStyle:'short'}).format(new Date()),lastRun:'github-actions',weekend:formatWeekend(targetWeekend),targetWeekend:targetWeekend.join(' / '),sourcesChecked:checked.length,newEvents:newEvents.length,removedEvents,sourceStatus:checked};
 await fs.writeFile(eventsPath, JSON.stringify(current,null,2)+'\n');

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastChecked": "17.10.2026, 19:02",
+    "lastChecked": "17.10.2026, 19:24",
     "weekend": "17–18 октября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
@@ -10,7 +10,7 @@
       {
         "name": "Официальный календарь Gdańsk.pl",
         "status": 200,
-        "parser": "json-ld"
+        "parser": "gdansk-calendar"
       },
       {
         "name": "Open House Worldwide Gdańsk",
@@ -54,7 +54,216 @@
       }
     ],
     "targetWeekend": "2026-10-17 / 2026-10-18",
-    "removedEvents": 0
+    "removedEvents": 0,
+    "researchEventsAdded": 10
   },
-  "events": []
+  "events": [
+    {
+      "id": "verified-gzuz-20261017",
+      "title": "GZUZ",
+      "date": "2026-10-17",
+      "time": "20:00",
+      "place": "B90, Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "концерт",
+        "музыка"
+      ],
+      "description": "Концерт; проверьте возрастные ограничения и условия на странице события.",
+      "source": "https://www.trojmiasto.pl/imprezy/GZUZ-imp592507.html"
+    },
+    {
+      "id": "verified-sonic-ecologies-20261018",
+      "title": "Central European Network for Sonic Ecologies — annual meeting",
+      "date": "2026-10-18",
+      "time": "10:00–13:00",
+      "place": "Nadbałtyckie Centrum Kultury, Sala Mieszczańska, Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "встреча",
+        "музыка"
+      ],
+      "description": "Годовая встреча сети по звуковым экологиям. Время и площадка подтверждены страницей события.",
+      "source": "https://www.eventbrite.se/e/central-european-network-for-sonic-ecologies-annual-meeting-tickets-1999417379204"
+    },
+    {
+      "id": "verified-ecs-workshop-20261018",
+      "title": "Piła do cięcia rur / Stoczniowa stolarnia",
+      "date": "2026-10-18",
+      "time": "11:00",
+      "place": "Sala Małych Stoczniowców, 3-й этаж, Europejskie Centrum Solidarności, Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "мастер-класс",
+        "для семьи"
+      ],
+      "description": "Семейный мастер-класс в Европейском центре солидарности; проверьте условия участия на странице события.",
+      "source": "https://ecs.gda.pl/wydarzenia/pila-do-ciecia-rur/"
+    },
+    {
+      "id": "verified-theatre-gdynia-20261018",
+      "title": "Wojak, Czarownica, Dwie Królewny i Trzy Psy",
+      "date": "2026-10-18",
+      "time": "12:00",
+      "place": "Teatr Gdynia Główna, Gdynia",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "театр"
+      ],
+      "description": "Театральное представление; время и площадка указаны в афише выходных Informator Pomorza.",
+      "source": "https://www.informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
+    },
+    {
+      "id": "auto-0J7RhNC40YbQuNCw0LvRjNC9",
+      "title": "AGNIESZKA GROCHOWSKA - SERCA GWIAZD",
+      "date": "2026-10-18",
+      "time": "16:00",
+      "place": "Dom Harcerza w Gdańsku",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "50 zł",
+      "solo": true,
+      "outdoor": false,
+      "registration": true,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Благотворительная встреча из цикла SERCA GWIAZD. Средства идут фонду Przemek Dzieciom; на официальной странице указаны билеты по 50 zł и ограниченное число мест.",
+      "source": "https://www.gdansk.pl/wydarzenia/AGNIESZKA-GROCHOWSKA-SERCA-GWIAZD,w,43171"
+    },
+    {
+      "id": "verified-idzie-chopin-20261018",
+      "title": "Idzie Chopin i…BACH",
+      "date": "2026-10-18",
+      "time": "17:00",
+      "place": "Kościół pw. Chrystusa Zbawiciela, ul. Pegaza 15, Gdańsk",
+      "area": "Gdańsk",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "концерт",
+        "классическая музыка"
+      ],
+      "description": "Фортепианный и органный концерт Петра Павлака, программа соединяет произведения Шопена и Баха.",
+      "source": "https://www.gdansk.pl/wydarzenia/Idzie-Chopin-i-BACH,w,43723"
+    },
+    {
+      "id": "verified-stare-dobre-malzenstwo-20261018",
+      "title": "Stare Dobre Małżeństwo",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "place": "Filharmonia Bałtycka, Ołowianka 1, Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "концерт",
+        "музыка"
+      ],
+      "description": "Концерт; подтвердите условия участия на странице события.",
+      "source": "https://www.trojmiasto.pl/imprezy/Stare-Dobre-Malzenstwo-imp598112.html"
+    },
+    {
+      "id": "verified-pink-floyd-tribute-20261018",
+      "title": "Pink Floyd Tribute — The Echoes Project",
+      "date": "2026-10-18",
+      "time": "19:00",
+      "place": "Stary Maneż, Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "концерт",
+        "музыка"
+      ],
+      "description": "Трибьют-концерт The Echoes Project; проверьте детали и билеты по ссылке.",
+      "source": "https://www.trojmiasto.pl/imprezy/Pink-Floyd-Tribute-The-Echoes-Project-imp593850.html"
+    },
+    {
+      "id": "verified-derby-20261018",
+      "title": "Derby Trójmiasta: LECHIA Gdańsk — ARKA Gdynia",
+      "date": "2026-10-18",
+      "time": "20:30",
+      "place": "Polsat Plus Arena Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "спорт",
+        "футбол"
+      ],
+      "description": "Футбольный матч дерби Труймяста; проверьте стадионные правила и билеты по ссылке.",
+      "source": "https://www.trojmiasto.pl/sport/LECHIA-Gdansk-ARKA-Gdynia-2026-imp602245.html"
+    },
+    {
+      "id": "verified-plagiat-boto-20261018",
+      "title": "Plagiat — спектакль с обсуждением",
+      "date": "2026-10-18",
+      "time": "время уточняется",
+      "place": "Sopocki Teatr BOTO, Sopot",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "Условия на странице события",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "театр"
+      ],
+      "description": "Афиша указывает спектакль и обсуждение после показа; время не опубликовано в сводке.",
+      "source": "https://www.informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
+    },
+    {
+      "id": "verified-holistika-20261018",
+      "title": "Festiwal Zdrowia HOLISTIKA — бесплатные профилактические обследования",
+      "date": "2026-10-18",
+      "time": "время уточняется",
+      "place": "Sopot (точная площадка в статье не указана)",
+      "area": "Gdańsk / Trójmiasto",
+      "free": true,
+      "price": "Бесплатно",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "здоровье",
+        "бесплатно"
+      ],
+      "description": "Бесплатные профилактические обследования в рамках фестиваля 17–18 октября; уточните место и расписание у организатора.",
+      "source": "https://informator-pomorza.pl/artykul/sopocka-jesien-zdrowia-psychicznego-bezplatne-warsztaty-spotkania-panele"
+    }
+  ]
 }
