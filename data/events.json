@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastChecked": "17.10.2026, 19:24",
+    "lastChecked": "17.10.2026, 22:38",
     "weekend": "17–18 октября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
@@ -54,29 +54,10 @@
       }
     ],
     "targetWeekend": "2026-10-17 / 2026-10-18",
-    "removedEvents": 0,
+    "removedEvents": 1,
     "researchEventsAdded": 10
   },
   "events": [
-    {
-      "id": "verified-gzuz-20261017",
-      "title": "GZUZ",
-      "date": "2026-10-17",
-      "time": "20:00",
-      "place": "B90, Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "Условия на странице события",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "концерт",
-        "музыка"
-      ],
-      "description": "Концерт; проверьте возрастные ограничения и условия на странице события.",
-      "source": "https://www.trojmiasto.pl/imprezy/GZUZ-imp592507.html"
-    },
     {
       "id": "verified-sonic-ecologies-20261018",
       "title": "Central European Network for Sonic Ecologies — annual meeting",
