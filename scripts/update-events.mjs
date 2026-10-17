@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import {formatWeekend, retainUpcomingEvents, upcomingWeekend, warsawDate} from '../weekend.mjs';
 
 const root = process.cwd();
 const eventsPath = path.join(root, 'data/events.json');
@@ -10,19 +11,9 @@ const checked = [];
 const discovered = [];
 const USER_AGENT = 'gdansk-weekend-radar/1.1 (+GitHub Actions; public event indexer)';
 
-function dateOnly(date) {
-  return new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Warsaw', year:'numeric', month:'2-digit', day:'2-digit'}).format(date);
-}
-function weekendDates() {
-  const now = new Date();
-  const weekday = new Intl.DateTimeFormat('en-US', {timeZone:'Europe/Warsaw', weekday:'short'}).format(now);
-  const day = ({Sun:1,Mon:2,Tue:3,Wed:4,Thu:5,Fri:6,Sat:7})[weekday];
-  const daysToSaturday = day === 1 ? 6 : day === 7 ? 0 : 7 - day;
-  const saturday = new Date(now.getTime() + daysToSaturday * 86400000);
-  const sunday = new Date(saturday.getTime() + 86400000);
-  return new Set([dateOnly(saturday), dateOnly(sunday)]);
-}
-const targetDates = weekendDates();
+const targetWeekend = upcomingWeekend();
+const targetDates = new Set(targetWeekend);
+const today = warsawDate();
 
 function parseJsonScripts(html) {
   const values = [];
@@ -113,9 +104,11 @@ for (const source of sources) {
 }
 
 const unique = [...new Map(discovered.map(event => [event.id, event])).values()];
-const existingIds = new Set(current.events.map(e => e.id));
+const retainedEvents = retainUpcomingEvents(current.events, today);
+const removedEvents = current.events.length - retainedEvents.length;
+const existingIds = new Set(retainedEvents.map(e => e.id));
 const newEvents = unique.filter(e => !existingIds.has(e.id));
-current.events = [...current.events, ...newEvents].sort((a,b)=>`${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
-current.meta = {...current.meta,lastChecked:new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Warsaw',dateStyle:'short',timeStyle:'short'}).format(new Date()),lastRun:'github-actions',targetWeekend:[...targetDates].join(' / '),sourcesChecked:checked.length,newEvents:newEvents.length,sourceStatus:checked};
+current.events = [...retainedEvents, ...newEvents].sort((a,b)=>`${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
+current.meta = {...current.meta,lastChecked:new Intl.DateTimeFormat('ru-RU',{timeZone:'Europe/Warsaw',dateStyle:'short',timeStyle:'short'}).format(new Date()),lastRun:'github-actions',weekend:formatWeekend(targetWeekend),targetWeekend:targetWeekend.join(' / '),sourcesChecked:checked.length,newEvents:newEvents.length,removedEvents,sourceStatus:checked};
 await fs.writeFile(eventsPath, JSON.stringify(current,null,2)+'\n');
-console.log(JSON.stringify({targetWeekend:[...targetDates],checked:checked.length,newEvents:newEvents.length,checkedSources:checked},null,2));
+console.log(JSON.stringify({targetWeekend,removedEvents,checked:checked.length,newEvents:newEvents.length,checkedSources:checked},null,2));
