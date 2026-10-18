@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {isGdanskPlace, isKnownLocalSource, isStructuredEvent, isVirtualEvent} from './source-validation.mjs';
+import {isGdanskPlace, isKnownLocalSource, isStructuredEvent, isVirtualEvent, stableEventId} from './source-validation.mjs';
 
 test('global event results need an explicit Gdańsk/Tricity location', () => {
   assert.equal(isGdanskPlace('Gdańsk, Poland'), true);
@@ -25,4 +25,11 @@ test('schema objects need an explicit Event type', () => {
 test('online event results are rejected', () => {
   assert.equal(isVirtualEvent('Concert livestream', ''), true);
   assert.equal(isVirtualEvent('Local concert', 'Gdańsk'), false);
+});
+
+test('events from the same source get distinct stable identifiers', () => {
+  const first = stableEventId('Informator Pomorza', 'Targi Młodej Sztuki', '2026-10-17', 'https://informator-pomorza.pl/article');
+  const second = stableEventId('Informator Pomorza', 'John Porter', '2026-10-17', 'https://informator-pomorza.pl/article');
+  assert.notEqual(first, second);
+  assert.equal(first, stableEventId('Informator Pomorza', 'Targi Młodej Sztuki', '2026-10-17', 'https://informator-pomorza.pl/article'));
 });

@@ -1,9 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import {formatWeekend, retainUpcomingEvents, upcomingWeekend, warsawDate} from '../weekend.mjs';
+import {displayWeekends, formatDisplayedWeekends, formatWeekend, retainDisplayedWeekendEvents, warsawDate} from '../weekend.mjs';
 import {extractGdanskEventCards} from './gdansk-parser.mjs';
 import {discoverInformatorArticleLinks, extractInformatorEvents} from './informator-parser.mjs';
-import {isGdanskPlace, isKnownLocalSource, isStructuredEvent, isVirtualEvent} from './source-validation.mjs';
+import {isGdanskPlace, isKnownLocalSource, isStructuredEvent, isVirtualEvent, stableEventId} from './source-validation.mjs';
 
 const root = process.cwd();
 const eventsPath = path.join(root, 'data/events.json');
@@ -13,8 +13,8 @@ const sources = JSON.parse(await fs.readFile(sourcesPath, 'utf8'));
 const checked = [];
 const discovered = [];
 const USER_AGENT = 'gdansk-weekend-radar/1.2 (+GitHub Actions; public event indexer)';
-const targetWeekend = upcomingWeekend();
-const targetDates = new Set(targetWeekend);
+const targetWeekends = displayWeekends();
+const targetDates = new Set(targetWeekends.flat());
 const today = warsawDate();
 
 function parseJsonScripts(html) {
@@ -61,8 +61,8 @@ function makeEvent(source, item, override = {}) {
   const description = text(item.description || item.summary || override.description) || `Найдено автоматическим сбором в источнике ${source.name}; проверьте условия на странице события.`;
   const tags = source.type === 'eventbrite' ? ['Eventbrite', 'автосбор'] : source.type === 'kultura.pl' ? ['kultura.pl', 'автосбор'] : ['автосбор'];
   return {
-    id: `auto-${Buffer.from(`${source.name}-${title}-${date}-${url}`).toString('base64url').slice(0,24)}`,
-    title, date, time: eventTime(start), place: location || 'место уточняется', area: 'Gdańsk / Trójmiasto',
+    id: stableEventId(source.name, title, date, url),
+    title, date, time: item.time && item.time !== 'уточняется' ? item.time : eventTime(start), place: location || 'место уточняется', area: 'Gdańsk / Trójmiasto',
     free: /free|bezpłat|darmow|wstęp wolny/i.test(`${item.offers?.price || ''} ${description}`),
     price: 'уточняется', solo: true, outdoor: false, registration: false, tags, description, source: url,
   };
@@ -118,23 +118,28 @@ for (const source of sources) {
     const html = await res.text();
     if (source.type === 'informator') {
       const candidates = discoverInformatorArticleLinks(html, targetDates).sort((a,b) => b.endDate.localeCompare(a.endDate));
-      const article = candidates[0];
-      if (!article) {
-        checked.push({name: `${source.name} — статья на целевой уикенд`, status: 'not-published', parser: 'informator-discovery'});
-        continue;
-      }
-      const articleResponse = await fetch(article.url, {headers: {'user-agent': USER_AGENT, 'accept-language': 'pl,en;q=0.8'}});
-      checked.push({name: `${source.name} — актуальная статья`, status: articleResponse.status, parser: 'informator-article', url: article.url});
-      if (articleResponse.ok) {
-        const articleHtml = await articleResponse.text();
-        for (const item of extractInformatorEvents(articleHtml, targetDates, article.url)) {
-          const event = makeEvent(source, {...item, location: item.place, url: article.url});
-          if (event) {
-            event.tags = ['Informator Pomorza', 'автосбор'];
-            event.description = item.description;
-            event.price = item.price;
-            event.free = item.free;
-            discovered.push(event);
+      const fetchedArticles = new Set();
+      for (const weekend of targetWeekends) {
+        const article = candidates.find(candidate => candidate.startDate <= weekend[1] && candidate.endDate >= weekend[0]);
+        if (!article) {
+          checked.push({name: `${source.name} — ${formatWeekend(weekend)}`, status: 'not-published', parser: 'informator-discovery'});
+          continue;
+        }
+        if (fetchedArticles.has(article.url)) continue;
+        fetchedArticles.add(article.url);
+        const articleResponse = await fetch(article.url, {headers: {'user-agent': USER_AGENT, 'accept-language': 'pl,en;q=0.8'}});
+        checked.push({name: `${source.name} — актуальная статья`, status: articleResponse.status, parser: 'informator-article', url: article.url});
+        if (articleResponse.ok) {
+          const articleHtml = await articleResponse.text();
+          for (const item of extractInformatorEvents(articleHtml, targetDates, article.url)) {
+            const event = makeEvent(source, {...item, location: item.place, url: article.url});
+            if (event) {
+              event.tags = ['Informator Pomorza', 'автосбор'];
+              event.description = item.description;
+              event.price = item.price;
+              event.free = item.free;
+              discovered.push(event);
+            }
           }
         }
       }
@@ -147,7 +152,7 @@ for (const source of sources) {
 }
 
 const unique = [...new Map(discovered.map(event => [event.id, event])).values()];
-const retainedEvents = retainUpcomingEvents(current.events, today);
+const retainedEvents = retainDisplayedWeekendEvents(current.events, today);
 const removedEvents = current.events.length - retainedEvents.length;
 const existingIds = new Set(retainedEvents.map(event => event.id));
 const eventKeys = new Set(retainedEvents.map(event => `${event.title.trim().toLocaleLowerCase('ru-RU')}|${event.date}`));
@@ -158,6 +163,6 @@ const newEvents = unique.filter(event => {
   return true;
 });
 current.events = [...retainedEvents, ...newEvents].sort((a,b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`));
-current.meta = {...current.meta, lastChecked: new Intl.DateTimeFormat('ru-RU', {timeZone: 'Europe/Warsaw', dateStyle: 'short', timeStyle: 'short'}).format(new Date()), lastRun: 'github-actions', weekend: formatWeekend(targetWeekend), targetWeekend: targetWeekend.join(' / '), sourcesChecked: checked.length, newEvents: newEvents.length, removedEvents, sourceStatus: checked};
+current.meta = {...current.meta, lastChecked: new Intl.DateTimeFormat('ru-RU', {timeZone: 'Europe/Warsaw', dateStyle: 'short', timeStyle: 'short'}).format(new Date()), lastRun: 'github-actions', weekend: formatDisplayedWeekends(targetWeekends), targetWeekend: targetWeekends.flat().join(' / '), sourcesChecked: checked.length, newEvents: newEvents.length, removedEvents, sourceStatus: checked};
 await fs.writeFile(eventsPath, JSON.stringify(current, null, 2) + '\n');
-console.log(JSON.stringify({targetWeekend, removedEvents, checked: checked.length, newEvents: newEvents.length, checkedSources: checked}, null, 2));
+console.log(JSON.stringify({targetWeekends, removedEvents, checked: checked.length, newEvents: newEvents.length, checkedSources: checked}, null, 2));
