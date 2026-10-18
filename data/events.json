@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastChecked": "17.10.2026, 22:38",
-    "weekend": "17–18 октября 2026",
+    "lastChecked": "18.10.2026, 06:36",
+    "weekend": "24–25 октября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 9,
@@ -53,8 +53,8 @@
         "parser": "json-ld"
       }
     ],
-    "targetWeekend": "2026-10-17 / 2026-10-18",
-    "removedEvents": 1,
+    "targetWeekend": "2026-10-24 / 2026-10-25",
+    "removedEvents": 0,
     "researchEventsAdded": 10
   },
   "events": [
