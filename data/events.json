@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "18.10.2026, 13:17",
+    "lastChecked": "18.10.2026, 13:18",
     "weekend": "17–18 октября 2026 и 24–25 октября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 11,
-    "newEvents": 20,
+    "newEvents": 0,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -50,7 +50,7 @@
       },
       {
         "name": "Eventbrite — события в Gdańsk",
-        "status": 200,
+        "status": 405,
         "parser": "eventbrite-local-only"
       },
       {
