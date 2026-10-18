@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastChecked": "18.10.2026, 13:05",
+    "lastChecked": "18.10.2026, 13:07",
     "weekend": "24–25 октября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Eventbrite — события в Gdańsk",
-        "status": 200,
+        "status": 405,
         "parser": "eventbrite-local-only"
       },
       {
