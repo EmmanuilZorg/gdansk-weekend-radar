@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "18.10.2026, 22:45",
-    "weekend": "17–18 октября 2026 и 24–25 октября 2026",
+    "lastChecked": "19.10.2026, 06:42",
+    "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 11,
-    "newEvents": 0,
+    "newEvents": 2,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -28,13 +28,12 @@
         "parser": "informator-discovery"
       },
       {
-        "name": "Informator Pomorza — актуальная статья",
-        "status": 200,
-        "parser": "informator-article",
-        "url": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
+        "name": "Informator Pomorza — 24–25 октября 2026",
+        "status": "not-published",
+        "parser": "informator-discovery"
       },
       {
-        "name": "Informator Pomorza — 24–25 октября 2026",
+        "name": "Informator Pomorza — 31 октября — 1 ноября 2026",
         "status": "not-published",
         "parser": "informator-discovery"
       },
@@ -64,219 +63,10 @@
         "parser": "json-ld-events-only"
       }
     ],
-    "targetWeekend": "2026-10-17 / 2026-10-18 / 2026-10-24 / 2026-10-25",
-    "removedEvents": 0
+    "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
+    "removedEvents": 11
   },
   "events": [
-    {
-      "id": "auto-41cb9adbcf4b0ec3b3ad84cb",
-      "title": "Targi Młodej Sztuki",
-      "date": "2026-10-17",
-      "time": "11:00",
-      "place": "Plenum",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "15 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "W gdańskim Plenum o godz. 11:00 rozpoczną się Targi Młodej Sztuki. To okazja, by poznać prace niezależnych twórców i obejrzeć dzieła sztuki współczesnej. Bilet wstępu kosztuje 15 zł.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-7abf6438fd5c3c624485c610",
-      "title": "Brzechwa dla dzieci",
-      "date": "2026-10-17",
-      "time": "12:00",
-      "place": "Teatrze Muzycznym, Gdyni",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "80 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "W sobotę w Gdyni będzie można obejrzeć spektakl „Brzechwa dla dzieci” w Teatrze Muzycznym. Rodzinna propozycja inspirowana twórczością Jana Brzechwy rozpoczyna się o godz. 12:00. Bilety kosztują od 60 do 80 zł. Spektakl zaplanowano również na niedzielę.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-c072ab126a45660567b7799e",
-      "title": "Quo Vadis",
-      "date": "2026-10-17",
-      "time": "18:00",
-      "place": "Teatrze Muzycznym, Gdyni",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "200 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "Na godz. 18:00 przygotowano dwie propozycje. Miłośnicy teatru mogą wybrać się na spektakl „Quo Vadis” w Teatrze Muzycznym w Gdyni, na który bilety kosztują od 120 do 200 zł.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-6807ec556b85ea1ca80b03e0",
-      "title": "John Porter",
-      "date": "2026-10-17",
-      "time": "19:00",
-      "place": "Starym Maneżu",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "170 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "Wieczorem w Starym Maneżu odbędzie się koncert dla słuchaczy rocka. John Porter zagra o godz. 19:00. Cena biletów wynosi około 170 zł.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-9541a8ff90eed817fac4f2bc",
-      "title": "Grupa MoCarta symfonicznie",
-      "date": "2026-10-17",
-      "time": "уточняется",
-      "place": "Trójmiasto (szczegóły w artykule)",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "Условия на странице источника",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "Z kolei fani klasycznych brzmień mogą wybrać się na koncert „Grupa MoCarta symfonicznie” w Polsat Plus Arenie. Przed zakupem warto sprawdzić aktualny cennik i dostępność biletów na stronie organizatora.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-6b6e7f07b1a1fad546dd5a7c",
-      "title": "Wojak, Czarownica, Dwie Królewny i Trzy Psy",
-      "date": "2026-10-18",
-      "time": "12:00",
-      "place": "Gdynia",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "40 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "W Teatrze Gdynia Główna o godz. 12:00 rozpocznie się spektakl „Wojak, Czarownica, Dwie Królewny i Trzy Psy”. Przedstawienie inspirowane baśniami Hansa Christiana Andersena łączy ze sobą aktorstwo, teatr lalek i muzykę. Bilety na wydarzenie kosztują 40 zł.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-be917c1e4319ec858bc61c46",
-      "title": "AGNIESZKA GROCHOWSKA - SERCA GWIAZD",
-      "date": "2026-10-18",
-      "time": "16:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/AGNIESZKA-GROCHOWSKA-SERCA-GWIAZD,w,43171"
-    },
-    {
-      "id": "auto-f7e33988284ef3c9d6301018",
-      "title": "Idzie Chopin i…BACH",
-      "date": "2026-10-18",
-      "time": "17:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Idzie-Chopin-i-BACH,w,43723"
-    },
-    {
-      "id": "auto-f1ede6321a03f53e1db2eeb9",
-      "title": "Stare Dobre Małżeństwo",
-      "date": "2026-10-18",
-      "time": "18:00",
-      "place": "Filharmonii Bałtyckiej, Gdańsku",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "200 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "Weekend w Gdańsku zakończy koncert grupy Stare Dobre Małżeństwo w Filharmonii Bałtyckiej. Legendarny zespół z kręgu piosenki poetyckiej wystąpi o godz. 18:00. Bilety kosztują od 160 do 200 zł.",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
-    {
-      "id": "auto-d8659f401d801df7491c4e47",
-      "title": "POKAZ WYJAZDOWY SPEKTAKLU „TERMOPILE POLSKIE”, REŻ. JAN KLATA",
-      "date": "2026-10-18",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/POKAZ-WYJAZDOWY-SPEKTAKLU-TERMOPILE-POLSKIE-REZ-JAN-KLATA,w,43727"
-    },
-    {
-      "id": "auto-a56efeea31fca27cbc2feb17",
-      "title": "Plagiat",
-      "date": "2026-10-18",
-      "time": "уточняется",
-      "place": "Trójmiasto (szczegóły w artykule)",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "45 zł",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Informator Pomorza",
-        "автосбор"
-      ],
-      "description": "Sopocki Teatr BOTO zaprasza na spektakl „Plagiat”, po którym zaplanowano rozmowę z twórcami. Wydarzenie odbędzie się w ramach X Sopockich Konsekwencji Teatralnych. Bilety kosztują 45 zł (normalny) i 35 zł (ulgowy).",
-      "source": "https://informator-pomorza.pl/artykul/co-robic-w-trojmiescie-w-weekend-16-18-pazdziernika"
-    },
     {
       "id": "auto-00dad9fc57aedf6dd7de085c",
       "title": "Perły Muzyki Rozrywkowej",
@@ -466,6 +256,44 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/29-Festiwal-Jazz-Jantar-jesien,w,43176"
+    },
+    {
+      "id": "auto-f50faa3d4e06f142b2da79fe",
+      "title": "Kobieca piłka w Gdańsku",
+      "date": "2026-10-31",
+      "time": "12:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Kobieca-pilka-w-Gdansku,w,43232"
+    },
+    {
+      "id": "auto-f6154fe0e2f01b6380dc03d5",
+      "title": "Rzeźby na spacerze – stań się częścią historii sztuki!",
+      "date": "2026-10-31",
+      "time": "23:59",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Rzezby-na-spacerze-stan-sie-czescia-historii-sztuki,w,43353"
     }
   ]
 }
