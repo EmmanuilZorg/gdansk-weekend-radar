@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "20.10.2026, 00:08",
+    "lastChecked": "20.10.2026, 00:22",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 12,
-    "newEvents": 4,
+    "sourcesChecked": 13,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -44,12 +44,12 @@
       },
       {
         "name": "POLMIC",
-        "status": 200,
+        "status": 403,
         "parser": "json-ld-events-only"
       },
       {
         "name": "Eventbrite — события в Gdańsk",
-        "status": 200,
+        "status": 405,
         "parser": "eventbrite-local-only"
       },
       {
@@ -66,7 +66,13 @@
         "name": "Budzma Razam — Telegram-бот",
         "status": "manual-interaction-required",
         "parser": "telegram-bot",
-        "note": "Telegram bot data is not publicly readable without an authorized Telegram session or Bot API access."
+        "note": "Telegram content is not publicly readable without an authorized Telegram session or accessible public channel history."
+      },
+      {
+        "name": "Telegram-публикация 14190",
+        "status": "manual-interaction-required",
+        "parser": "telegram-post",
+        "note": "Telegram content is not publicly readable without an authorized Telegram session or accessible public channel history."
       }
     ],
     "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
@@ -376,6 +382,25 @@
       ],
       "description": "Найдено автоматическим сбором в источнике Eventbrite — события в Gdańsk; проверьте условия на странице события.",
       "source": "https://www.eventbrite.co.uk/e/jesienne-spotkanie-z-doterra-w-trojmiescie-tickets-1998482894134"
+    },
+    {
+      "id": "auto-666596afa8790fb23acc9547",
+      "title": "Dyniowa farma przy Hali Targowej",
+      "date": "2026-10-31",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Dyniowa-farma-przy-Hali-Targowej,w,43805"
     }
   ]
 }
