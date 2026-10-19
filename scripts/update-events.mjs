@@ -112,6 +112,10 @@ function parseSource(source, html) {
 
 for (const source of sources) {
   try {
+    if (source.type === 'telegram-bot') {
+      checked.push({name: source.name, status: 'manual-interaction-required', parser: 'telegram-bot', note: 'Telegram bot data is not publicly readable without an authorized Telegram session or Bot API access.'});
+      continue;
+    }
     const res = await fetch(source.url, {headers: {'user-agent': USER_AGENT, 'accept-language': 'pl,en;q=0.8'}});
     checked.push({name: source.name, status: res.status, parser: source.type === 'informator' ? 'informator-discovery' : source.url.includes('gdansk.pl/wydarzenia') ? 'gdansk-calendar' : source.type === 'eventbrite' ? 'eventbrite-local-only' : source.type === 'kultura.pl' ? 'kultura.pl-local-only' : 'json-ld-events-only'});
     if (!res.ok) continue;

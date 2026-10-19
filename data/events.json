@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "19.10.2026, 15:19",
+    "lastChecked": "20.10.2026, 00:08",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 11,
-    "newEvents": 0,
+    "sourcesChecked": 12,
+    "newEvents": 4,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -44,12 +44,12 @@
       },
       {
         "name": "POLMIC",
-        "status": 403,
+        "status": 200,
         "parser": "json-ld-events-only"
       },
       {
         "name": "Eventbrite — события в Gdańsk",
-        "status": 405,
+        "status": 200,
         "parser": "eventbrite-local-only"
       },
       {
@@ -61,12 +61,37 @@
         "name": "Europejskie Centrum Solidarności — события",
         "status": 200,
         "parser": "json-ld-events-only"
+      },
+      {
+        "name": "Budzma Razam — Telegram-бот",
+        "status": "manual-interaction-required",
+        "parser": "telegram-bot",
+        "note": "Telegram bot data is not publicly readable without an authorized Telegram session or Bot API access."
       }
     ],
     "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
     "removedEvents": 0
   },
   "events": [
+    {
+      "id": "auto-1bf35fc40a0f81494159fbef",
+      "title": "Bezpłatne warsztaty krawieckie dla młodzieży",
+      "date": "2026-10-24",
+      "time": "10:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Bezplatne-warsztaty-krawieckie-dla-mlodziezy,w,43790"
+    },
     {
       "id": "auto-00dad9fc57aedf6dd7de085c",
       "title": "Perły Muzyki Rozrywkowej",
@@ -239,6 +264,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Kokoszki,w,42353"
     },
     {
+      "id": "auto-578bb0538ad423cebf6d6c1f",
+      "title": "De Mono akustycznie",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/De-Mono-akustycznie,w,43792"
+    },
+    {
       "id": "auto-468c86bceae6f75dcc183ff7",
       "title": "29. Festiwal Jazz Jantar/ jesień",
       "date": "2026-10-25",
@@ -256,6 +300,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/29-Festiwal-Jazz-Jantar-jesien,w,43176"
+    },
+    {
+      "id": "auto-5d009775155d5f46419f425f",
+      "title": "FunRun Zabawa z Mapą - Gry Parkowe na Orientację Sobieszewo",
+      "date": "2026-10-25",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/FunRun-Zabawa-z-Mapa-Gry-Parkowe-na-Orientacje-Sobieszewo,w,43803"
     },
     {
       "id": "auto-f50faa3d4e06f142b2da79fe",
@@ -294,6 +357,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Rzezby-na-spacerze-stan-sie-czescia-historii-sztuki,w,43353"
+    },
+    {
+      "id": "auto-59df21df140b0a38a22f9ba8",
+      "title": "Jesienne Spotkanie z doTERRA w Trójmieście",
+      "date": "2026-10-31",
+      "time": "уточняется",
+      "place": "Radisson Blu Hotel, Sopot",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "Eventbrite",
+        "автосбор"
+      ],
+      "description": "Найдено автоматическим сбором в источнике Eventbrite — события в Gdańsk; проверьте условия на странице события.",
+      "source": "https://www.eventbrite.co.uk/e/jesienne-spotkanie-z-doterra-w-trojmiescie-tickets-1998482894134"
     }
   ]
 }

@@ -7,5 +7,6 @@
   {"name":"POLMIC","url":"https://polmic.pl/pl/dzieje-sie/vi-choralna-masa-krytyczna-charytatywny-koncert-finalowy","type":"polish"},
   {"name":"Eventbrite — события в Gdańsk","url":"https://www.eventbrite.com/d/poland--gdansk/events/","type":"eventbrite"},
   {"name":"Kultura.pl / Culture.pl — календарь событий","url":"https://culture.pl/pl/wydarzenia","type":"kultura.pl"},
-  {"name":"Europejskie Centrum Solidarności — события","url":"https://ecs.gda.pl/wydarzenia/","type":"official"}
+  {"name":"Europejskie Centrum Solidarności — события","url":"https://ecs.gda.pl/","type":"official"},
+  {"name":"Budzma Razam — Telegram-бот","url":"https://t.me/Budzma_razam_bot","type":"telegram-bot"}
 ]
