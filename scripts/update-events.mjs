@@ -112,8 +112,8 @@ function parseSource(source, html) {
 
 for (const source of sources) {
   try {
-    if (source.type === 'telegram-bot') {
-      checked.push({name: source.name, status: 'manual-interaction-required', parser: 'telegram-bot', note: 'Telegram bot data is not publicly readable without an authorized Telegram session or Bot API access.'});
+    if (source.type === 'telegram-bot' || source.type === 'telegram-post') {
+      checked.push({name: source.name, status: 'manual-interaction-required', parser: source.type, note: 'Telegram content is not publicly readable without an authorized Telegram session or accessible public channel history.'});
       continue;
     }
     const res = await fetch(source.url, {headers: {'user-agent': USER_AGENT, 'accept-language': 'pl,en;q=0.8'}});

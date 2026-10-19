@@ -8,5 +8,6 @@
   {"name":"Eventbrite — события в Gdańsk","url":"https://www.eventbrite.com/d/poland--gdansk/events/","type":"eventbrite"},
   {"name":"Kultura.pl / Culture.pl — календарь событий","url":"https://culture.pl/pl/wydarzenia","type":"kultura.pl"},
   {"name":"Europejskie Centrum Solidarności — события","url":"https://ecs.gda.pl/","type":"official"},
-  {"name":"Budzma Razam — Telegram-бот","url":"https://t.me/Budzma_razam_bot","type":"telegram-bot"}
+  {"name":"Budzma Razam — Telegram-бот","url":"https://t.me/Budzma_razam_bot","type":"telegram-bot"},
+  {"name":"Telegram-публикация 14190","url":"https://t.me/c/1596565827/14190","type":"telegram-post"}
 ]
