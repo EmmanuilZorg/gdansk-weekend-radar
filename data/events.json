@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "20.10.2026, 06:53",
+    "lastChecked": "20.10.2026, 12:20",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 2,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -69,10 +69,10 @@
         "note": "Telegram content is not publicly readable without an authorized Telegram session or accessible public channel history."
       },
       {
-        "name": "Telegram-публикация 14190",
+        "name": "Закрытый Telegram-канал — пост 14190",
         "status": "manual-interaction-required",
-        "parser": "telegram-post",
-        "note": "Telegram content is not publicly readable without an authorized Telegram session or accessible public channel history."
+        "parser": "telegram-mtproto",
+        "events": 0
       }
     ],
     "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
@@ -270,6 +270,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Kokoszki,w,42353"
     },
     {
+      "id": "auto-7cb4483f2044155eb626e50b",
+      "title": "Czwarta edycja PSTRO – Przeglądu Studenckich Teatralnych Realizacji Offowych",
+      "date": "2026-10-25",
+      "time": "12:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Czwarta-edycja-PSTRO-Przegladu-Studenckich-Teatralnych-Realizacji-Offowych,w,43822"
+    },
+    {
       "id": "auto-578bb0538ad423cebf6d6c1f",
       "title": "De Mono akustycznie",
       "date": "2026-10-25",
@@ -325,6 +344,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/FunRun-Zabawa-z-Mapa-Gry-Parkowe-na-Orientacje-Sobieszewo,w,43803"
+    },
+    {
+      "id": "auto-a283de02a9118610b9932f01",
+      "title": "4. edycja festiwalu ETNOMATOGRAF",
+      "date": "2026-10-25",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/4-edycja-festiwalu-ETNOMATOGRAF,w,43817"
     },
     {
       "id": "auto-f50faa3d4e06f142b2da79fe",
