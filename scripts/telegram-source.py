@@ -58,7 +58,10 @@ def make_event(message, date, text):
 
 async def main():
     OUT.write_text('[]\n', encoding='utf-8')
-    api_id, api_hash, session = (os.getenv('TG_API_ID') or '').strip(), (os.getenv('TG_API_HASH') or '').strip(), (os.getenv('TG_SESSION') or '').strip()
+    def clean(value):
+        value = (value or '').strip()
+        return value[1:-1].strip() if len(value) >= 2 and value[0] == value[-1] and value[0] in "'\"" else value
+    api_id, api_hash, session = clean(os.getenv('TG_API_ID')), clean(os.getenv('TG_API_HASH')), clean(os.getenv('TG_SESSION'))
     if not (api_id and api_hash and session):
         print('Telegram secrets are not configured; skipping private channel collection.')
         return
@@ -77,13 +80,27 @@ async def main():
             return
         target = weekend_dates()
         events = []
-        async with TelegramClient(session_obj, api_id_number, api_hash) as client:
-            async for message in client.iter_messages(CHANNEL_ID, limit=300):
+        try:
+            client = TelegramClient(session_obj, api_id_number, api_hash)
+        except Exception as exc:
+            print(f'Telegram collection skipped: client initialization failed ({type(exc).__name__}).')
+            return
+        try:
+            await client.connect()
+            if not await client.is_user_authorized():
+                print('Telegram collection skipped: session is not authorized.')
+                return
+            entity = await client.get_entity(CHANNEL_ID)
+            async for message in client.iter_messages(entity, limit=300):
                 text = message.message or ''
                 if not text or not re.search(r'gdańsk|gdansk|gdañsk|trójmiasto|trojmiasto', text, re.I):
                     continue
                 for date in sorted(dates_in(text) & target):
                     events.append(make_event(message, date, text))
+        except Exception as exc:
+            print(f'Telegram collection skipped: channel access failed ({type(exc).__name__}).')
+        finally:
+            await client.disconnect()
         unique = {event['id']: event for event in events}
         OUT.write_text(json.dumps(list(unique.values()), ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(f'Telegram collection completed: {len(unique)} events.')
