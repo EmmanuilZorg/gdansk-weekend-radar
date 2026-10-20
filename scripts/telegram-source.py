@@ -58,16 +58,26 @@ def make_event(message, date, text):
 
 async def main():
     OUT.write_text('[]\n', encoding='utf-8')
-    api_id, api_hash, session = os.getenv('TG_API_ID'), os.getenv('TG_API_HASH'), os.getenv('TG_SESSION')
+    api_id, api_hash, session = (os.getenv('TG_API_ID') or '').strip(), (os.getenv('TG_API_HASH') or '').strip(), (os.getenv('TG_SESSION') or '').strip()
     if not (api_id and api_hash and session):
         print('Telegram secrets are not configured; skipping private channel collection.')
         return
     try:
         from telethon import TelegramClient
         from telethon.sessions import StringSession
+        try:
+            api_id_number = int(api_id)
+        except ValueError:
+            print('Telegram collection skipped: TG_API_ID is not an integer.')
+            return
+        try:
+            session_obj = StringSession(session)
+        except ValueError:
+            print('Telegram collection skipped: TG_SESSION format is invalid.')
+            return
         target = weekend_dates()
         events = []
-        async with TelegramClient(StringSession(session), int(api_id), api_hash) as client:
+        async with TelegramClient(session_obj, api_id_number, api_hash) as client:
             async for message in client.iter_messages(CHANNEL_ID, limit=300):
                 text = message.message or ''
                 if not text or not re.search(r'gdańsk|gdansk|gdañsk|trójmiasto|trojmiasto', text, re.I):
