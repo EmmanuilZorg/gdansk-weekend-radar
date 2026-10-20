@@ -10,6 +10,8 @@ const eventsPath = path.join(root, 'data/events.json');
 const sourcesPath = path.join(root, 'data/sources.json');
 const current = JSON.parse(await fs.readFile(eventsPath, 'utf8'));
 const sources = JSON.parse(await fs.readFile(sourcesPath, 'utf8'));
+let telegramEvents = [];
+try { telegramEvents = JSON.parse(await fs.readFile(path.join(root, 'data/telegram-events.json'), 'utf8')); } catch {}
 const checked = [];
 const discovered = [];
 const USER_AGENT = 'gdansk-weekend-radar/1.2 (+GitHub Actions; public event indexer)';
@@ -112,6 +114,11 @@ function parseSource(source, html) {
 
 for (const source of sources) {
   try {
+    if (source.type === 'telegram-channel') {
+      if (telegramEvents.length) discovered.push(...telegramEvents);
+      checked.push({name: source.name, status: telegramEvents.length ? 200 : 'manual-interaction-required', parser: 'telegram-mtproto', events: telegramEvents.length});
+      continue;
+    }
     if (source.type === 'telegram-bot' || source.type === 'telegram-post') {
       checked.push({name: source.name, status: 'manual-interaction-required', parser: source.type, note: 'Telegram content is not publicly readable without an authorized Telegram session or accessible public channel history.'});
       continue;
