@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastChecked": "20.10.2026, 12:20",
+    "lastChecked": "20.10.2026, 13:39",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
@@ -97,6 +97,44 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Bezplatne-warsztaty-krawieckie-dla-mlodziezy,w,43790"
+    },
+    {
+      "id": "auto-67558b9813e304c1cbe8154e",
+      "title": "Kino przyjazne sensorycznie",
+      "date": "2026-10-24",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Kino-przyjazne-sensorycznie,w,43826"
+    },
+    {
+      "id": "auto-ab9da1922ab6490759532b41",
+      "title": "Wyścigi mikrodronów w Conradinum",
+      "date": "2026-10-24",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Wyscigi-mikrodronow-w-Conradinum,w,43827"
     },
     {
       "id": "auto-00dad9fc57aedf6dd7de085c",
