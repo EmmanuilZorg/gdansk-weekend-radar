@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "20.10.2026, 14:39",
+    "lastChecked": "20.10.2026, 14:56",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -70,9 +70,9 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": "manual-interaction-required",
+        "status": 200,
         "parser": "telegram-mtproto",
-        "events": 0
+        "events": 1
       }
     ],
     "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
@@ -496,6 +496,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Dyniowa-farma-przy-Hali-Targowej,w,43805"
+    },
+    {
+      "id": "telegram-1001596565827-178531-2026-10-31",
+      "title": "Dla studentów −30% na depilację laserową w love🩷epil 🎓",
+      "date": "2026-10-31",
+      "time": "уточняется",
+      "place": "Gdańsk / Trójmiasto",
+      "area": "Gdańsk / Trójmiasto",
+      "free": true,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "Telegram",
+        "автосбор"
+      ],
+      "description": "Dla studentów −30% na depilację laserową w love🩷epil 🎓 Pokaż legitymację studencką i odbierz zniżkę −30% na depilację laserową na laserze diodowym SMART. Zniżka obowiązuje zarówno na pojedyncze wizyty, jak i na karnety. Dla nowych klientów, do 31.10.2026 💌 Napisz do nas w DM „Student-30%” — i dowiedz się szczegółów. 📍 Adres: Gdańsk, Jana Kilińskiego 9/20 📱 Instagram: @love_epil_poland love🩷epil — unlock your freedom.",
+      "source": "https://t.me/c/596565827/178531"
     }
   ]
 }
