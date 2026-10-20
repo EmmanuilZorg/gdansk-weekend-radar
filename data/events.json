@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "20.10.2026, 13:39",
+    "lastChecked": "20.10.2026, 14:36",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 2,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -363,6 +363,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/29-Festiwal-Jazz-Jantar-jesien,w,43176"
+    },
+    {
+      "id": "auto-6bfda0de4bb378fde1f1ea61",
+      "title": "Muzyka Europy w kościele gdańskiej Polonii",
+      "date": "2026-10-25",
+      "time": "19:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Muzyka-Europy-w-kosciele-gdanskiej-Polonii,w,43829"
     },
     {
       "id": "auto-5d009775155d5f46419f425f",
