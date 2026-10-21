@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastChecked": "21.10.2026, 06:50",
+    "lastChecked": "21.10.2026, 13:51",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
@@ -70,9 +70,9 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": 200,
+        "status": "manual-interaction-required",
         "parser": "telegram-mtproto",
-        "events": 1
+        "events": 0
       }
     ],
     "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
