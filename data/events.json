@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "22.10.2026, 06:49",
+    "lastChecked": "22.10.2026, 13:55",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 3,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -213,6 +213,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Laboratorium-Nowej-Muzyki-Sakralnej,w,43758"
     },
     {
+      "id": "auto-eac0061b22c9b3279958d7bd",
+      "title": "Zalewski Solo Act",
+      "date": "2026-10-24",
+      "time": "20:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Zalewski-Solo-Act,w,43835"
+    },
+    {
       "id": "auto-0J7RhNC40YbQuNCw0LvRjNC9",
       "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Morena",
       "date": "2026-10-24",
@@ -384,6 +403,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Muzyka-Europy-w-kosciele-gdanskiej-Polonii,w,43829"
     },
     {
+      "id": "auto-a8c9d2636041789291795a40",
+      "title": "Rogucki x 30",
+      "date": "2026-10-25",
+      "time": "19:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Rogucki-x-30,w,43834"
+    },
+    {
       "id": "auto-5d009775155d5f46419f425f",
       "title": "FunRun Zabawa z Mapą - Gry Parkowe na Orientację Sobieszewo",
       "date": "2026-10-25",
@@ -420,6 +458,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/4-edycja-festiwalu-ETNOMATOGRAF,w,43817"
+    },
+    {
+      "id": "auto-49e798e237865d3b7b70e302",
+      "title": "Targ Miejski: Second Hand Market",
+      "date": "2026-10-25",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Targ-Miejski-Second-Hand-Market,w,43838"
     },
     {
       "id": "auto-f50faa3d4e06f142b2da79fe",
