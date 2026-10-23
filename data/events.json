@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "23.10.2026, 13:41",
+    "lastChecked": "23.10.2026, 19:09",
     "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -70,9 +70,9 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": "manual-interaction-required",
+        "status": 200,
         "parser": "telegram-mtproto",
-        "events": 0
+        "events": 1
       }
     ],
     "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
@@ -192,6 +192,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Koncert-Trio-Macieja-Sikaly-Better-Place,w,43343"
+    },
+    {
+      "id": "telegram-1001596565827-179095-2026-10-24",
+      "title": "Пришло время для для настоящего осеннего гилти плэжэ!",
+      "date": "2026-10-24",
+      "time": "19:00",
+      "place": "Gdańsk / Trójmiasto",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "Telegram",
+        "автосбор"
+      ],
+      "description": "Пришло время для для настоящего осеннего гилти плэжэ! Уже завтра (в субботу) --------------- ‼️ Этот проект нуждается в поддержке зрителей, поэтому каждый купивший билет, получает +1 на указанный имеил 🎁 --------------- Следи за нашими новостями на странице Инстаграм black.lace.comedy и YouTube \"Черное Кружевное\" 🗓️ 24.10.2026 🕖 19:00 (двери открыты с 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ билеты 50 zł по ссылке👇 https://blacklacecomedy.com/",
+      "source": "https://t.me/c/596565827/179095"
     },
     {
       "id": "auto-8e70f9869b2df708d4916651",
