@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "25.10.2026, 21:52",
-    "weekend": "24–25 октября 2026 и 31 октября — 1 ноября 2026",
+    "lastChecked": "26.10.2026, 05:49",
+    "weekend": "31 октября — 1 ноября 2026 и 7–8 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 6,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -28,12 +28,12 @@
         "parser": "informator-discovery"
       },
       {
-        "name": "Informator Pomorza — 24–25 октября 2026",
+        "name": "Informator Pomorza — 31 октября — 1 ноября 2026",
         "status": "not-published",
         "parser": "informator-discovery"
       },
       {
-        "name": "Informator Pomorza — 31 октября — 1 ноября 2026",
+        "name": "Informator Pomorza — 7–8 ноября 2026",
         "status": "not-published",
         "parser": "informator-discovery"
       },
@@ -70,433 +70,15 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": 200,
+        "status": "manual-interaction-required",
         "parser": "telegram-mtproto",
-        "events": 1
+        "events": 0
       }
     ],
-    "targetWeekend": "2026-10-24 / 2026-10-25 / 2026-10-31 / 2026-11-01",
-    "removedEvents": 0
+    "targetWeekend": "2026-10-31 / 2026-11-01 / 2026-11-07 / 2026-11-08",
+    "removedEvents": 22
   },
   "events": [
-    {
-      "id": "auto-1bf35fc40a0f81494159fbef",
-      "title": "Bezpłatne warsztaty krawieckie dla młodzieży",
-      "date": "2026-10-24",
-      "time": "10:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Bezplatne-warsztaty-krawieckie-dla-mlodziezy,w,43790"
-    },
-    {
-      "id": "auto-67558b9813e304c1cbe8154e",
-      "title": "Kino przyjazne sensorycznie",
-      "date": "2026-10-24",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Kino-przyjazne-sensorycznie,w,43826"
-    },
-    {
-      "id": "auto-ab9da1922ab6490759532b41",
-      "title": "Wyścigi mikrodronów w Conradinum",
-      "date": "2026-10-24",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Wyscigi-mikrodronow-w-Conradinum,w,43827"
-    },
-    {
-      "id": "auto-00dad9fc57aedf6dd7de085c",
-      "title": "Perły Muzyki Rozrywkowej",
-      "date": "2026-10-24",
-      "time": "18:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Perly-Muzyki-Rozrywkowej,w,43741"
-    },
-    {
-      "id": "auto-bdf7789500d82ce2df7471af",
-      "title": "SKAWIŃSKI I TKACZYK: jubileuszowa trasa",
-      "date": "2026-10-24",
-      "time": "18:30",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/SKAWINSKI-I-TKACZYK-jubileuszowa-trasa,w,43764"
-    },
-    {
-      "id": "auto-b52510fbbe9c6f20c3614f89",
-      "title": "Koncert Trio Macieja Sikały - Better Place",
-      "date": "2026-10-24",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Koncert-Trio-Macieja-Sikaly-Better-Place,w,43343"
-    },
-    {
-      "id": "telegram-1001596565827-179095-2026-10-24",
-      "title": "Пришло время для для настоящего осеннего гилти плэжэ!",
-      "date": "2026-10-24",
-      "time": "19:00",
-      "place": "Gdańsk / Trójmiasto",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "Telegram",
-        "автосбор"
-      ],
-      "description": "Пришло время для для настоящего осеннего гилти плэжэ! Уже завтра (в субботу) --------------- ‼️ Этот проект нуждается в поддержке зрителей, поэтому каждый купивший билет, получает +1 на указанный имеил 🎁 --------------- Следи за нашими новостями на странице Инстаграм black.lace.comedy и YouTube \"Черное Кружевное\" 🗓️ 24.10.2026 🕖 19:00 (двери открыты с 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ билеты 50 zł по ссылке👇 https://blacklacecomedy.com/",
-      "source": "https://t.me/c/596565827/179095"
-    },
-    {
-      "id": "auto-8e70f9869b2df708d4916651",
-      "title": "Laboratorium Nowej Muzyki Sakralnej",
-      "date": "2026-10-24",
-      "time": "20:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Laboratorium-Nowej-Muzyki-Sakralnej,w,43758"
-    },
-    {
-      "id": "auto-eac0061b22c9b3279958d7bd",
-      "title": "Zalewski Solo Act",
-      "date": "2026-10-24",
-      "time": "20:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Zalewski-Solo-Act,w,43835"
-    },
-    {
-      "id": "auto-0J7RhNC40YbQuNCw0LvRjNC9",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Morena",
-      "date": "2026-10-24",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Morena,w,42354"
-    },
-    {
-      "id": "auto-f1515934c130883f91fc203b",
-      "title": "Narracje #17: Żabianka-Jelitkowo-Wejhera-Tysiąclecia",
-      "date": "2026-10-24",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Narracje-17-Zabianka-Jelitkowo-Wejhera-Tysiaclecia,w,43768"
-    },
-    {
-      "id": "auto-8cb76fec9fe17e800ae618a5",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Brzeźno",
-      "date": "2026-10-24",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Brzezno,w,42351"
-    },
-    {
-      "id": "auto-2d1973f442c46431a7810eee",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Stogi",
-      "date": "2026-10-24",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Stogi,w,42352"
-    },
-    {
-      "id": "auto-e0e946a38f9358df3d6422cb",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Kokoszki",
-      "date": "2026-10-24",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Kokoszki,w,42353"
-    },
-    {
-      "id": "auto-7cb4483f2044155eb626e50b",
-      "title": "Czwarta edycja PSTRO – Przeglądu Studenckich Teatralnych Realizacji Offowych",
-      "date": "2026-10-25",
-      "time": "12:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Czwarta-edycja-PSTRO-Przegladu-Studenckich-Teatralnych-Realizacji-Offowych,w,43822"
-    },
-    {
-      "id": "auto-578bb0538ad423cebf6d6c1f",
-      "title": "De Mono akustycznie",
-      "date": "2026-10-25",
-      "time": "18:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/De-Mono-akustycznie,w,43792"
-    },
-    {
-      "id": "auto-468c86bceae6f75dcc183ff7",
-      "title": "29. Festiwal Jazz Jantar/ jesień",
-      "date": "2026-10-25",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/29-Festiwal-Jazz-Jantar-jesien,w,43176"
-    },
-    {
-      "id": "auto-6bfda0de4bb378fde1f1ea61",
-      "title": "Muzyka Europy w kościele gdańskiej Polonii",
-      "date": "2026-10-25",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Muzyka-Europy-w-kosciele-gdanskiej-Polonii,w,43829"
-    },
-    {
-      "id": "auto-a8c9d2636041789291795a40",
-      "title": "Rogucki x 30",
-      "date": "2026-10-25",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Rogucki-x-30,w,43834"
-    },
-    {
-      "id": "auto-5d009775155d5f46419f425f",
-      "title": "FunRun Zabawa z Mapą - Gry Parkowe na Orientację Sobieszewo",
-      "date": "2026-10-25",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/FunRun-Zabawa-z-Mapa-Gry-Parkowe-na-Orientacje-Sobieszewo,w,43803"
-    },
-    {
-      "id": "auto-a283de02a9118610b9932f01",
-      "title": "4. edycja festiwalu ETNOMATOGRAF",
-      "date": "2026-10-25",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/4-edycja-festiwalu-ETNOMATOGRAF,w,43817"
-    },
-    {
-      "id": "auto-49e798e237865d3b7b70e302",
-      "title": "Targ Miejski: Second Hand Market",
-      "date": "2026-10-25",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Targ-Miejski-Second-Hand-Market,w,43838"
-    },
     {
       "id": "auto-f50faa3d4e06f142b2da79fe",
       "title": "Kobieca piłka w Gdańsku",
@@ -591,6 +173,120 @@
       ],
       "description": "Dla studentów −30% na depilację laserową w love🩷epil 🎓 Pokaż legitymację studencką i odbierz zniżkę −30% na depilację laserową na laserze diodowym SMART. Zniżka obowiązuje zarówno na pojedyncze wizyty, jak i na karnety. Dla nowych klientów, do 31.10.2026 💌 Napisz do nas w DM „Student-30%” — i dowiedz się szczegółów. 📍 Adres: Gdańsk, Jana Kilińskiego 9/20 📱 Instagram: @love_epil_poland love🩷epil — unlock your freedom.",
       "source": "https://t.me/c/596565827/178531"
+    },
+    {
+      "id": "auto-1f07b872b40e03e5495da0d0",
+      "title": "Hate Haus",
+      "date": "2026-11-07",
+      "time": "19:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Hate-Haus,w,43845"
+    },
+    {
+      "id": "auto-c4f365a545078ac76d39a7e6",
+      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Śródmieście",
+      "date": "2026-11-07",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Srodmiescie,w,42975"
+    },
+    {
+      "id": "auto-d979f51973249ec052a8a52a",
+      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Orunia",
+      "date": "2026-11-07",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Orunia,w,42976"
+    },
+    {
+      "id": "auto-efafcaa5a681e0f63fd936dc",
+      "title": "XIII Grand Prix Aleksandry Kobielak w Fitness Sportowym",
+      "date": "2026-11-07",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/XIII-Grand-Prix-Aleksandry-Kobielak-w-Fitness-Sportowym,w,43840"
+    },
+    {
+      "id": "auto-4e315296db84500301bc6eeb",
+      "title": "12. MFF ANIMAFEST GDAŃSK",
+      "date": "2026-11-07",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/12-MFF-ANIMAFEST-GDANSK,w,43819"
+    },
+    {
+      "id": "auto-a3954ad4ddc6f89b3f093529",
+      "title": "XIII Grand Prix Aleksandry Kobielak w Fitness Sportowym",
+      "date": "2026-11-08",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/XIII-Grand-Prix-Aleksandry-Kobielak-w-Fitness-Sportowym,w,43840"
     }
   ]
 }
