@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "29.10.2026, 14:04",
+    "lastChecked": "29.10.2026, 23:46",
     "weekend": "31 октября — 1 ноября 2026 и 7–8 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 3,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -80,6 +80,25 @@
   },
   "events": [
     {
+      "id": "auto-acc6a63ca84472a3fd41ecdf",
+      "title": "Winyle, kasety i muzyczne perełki: Halloweenowy kiermasz w Galerii Przymorze",
+      "date": "2026-10-31",
+      "time": "09:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Winyle-kasety-i-muzyczne-perelki-Halloweenowy-kiermasz-w-Galerii-Przymorze,w,43861"
+    },
+    {
       "id": "auto-f50faa3d4e06f142b2da79fe",
       "title": "Kobieca piłka w Gdańsku",
       "date": "2026-10-31",
@@ -97,6 +116,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Kobieca-pilka-w-Gdansku,w,43232"
+    },
+    {
+      "id": "auto-74a50d114ccc58bab04be401",
+      "title": "Jesienne warsztaty z Dyniową Farmą w Hali Targowej",
+      "date": "2026-10-31",
+      "time": "12:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Jesienne-warsztaty-z-Dyniowa-Farma-w-Hali-Targowej,w,43856"
     },
     {
       "id": "auto-f6154fe0e2f01b6380dc03d5",
@@ -287,6 +325,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Fun-Run-bieg-w-Jarze-Wilanowskim,w,43849"
+    },
+    {
+      "id": "auto-ccb7be43f1cc679cf599e27f",
+      "title": "Hala Rodzinnie. Kreatywne Warsztaty dla Dzieci",
+      "date": "2026-11-08",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Hala-Rodzinnie-Kreatywne-Warsztaty-dla-Dzieci,w,43855"
     },
     {
       "id": "auto-4ee39cf55080ea22bf3fda7f",
