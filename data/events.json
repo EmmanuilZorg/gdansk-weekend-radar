@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "09.11.2026, 07:33",
+    "lastChecked": "09.11.2026, 23:23",
     "weekend": "14–15 ноября 2026 и 21–22 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 5,
+    "newEvents": 0,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -76,7 +76,7 @@
       }
     ],
     "targetWeekend": "2026-11-14 / 2026-11-15 / 2026-11-21 / 2026-11-22",
-    "removedEvents": 11
+    "removedEvents": 0
   },
   "events": [
     {
