@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "15.11.2026, 19:52",
-    "weekend": "14–15 ноября 2026 и 21–22 ноября 2026",
+    "lastChecked": "16.11.2026, 07:32",
+    "weekend": "21–22 ноября 2026 и 28–29 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 4,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -28,12 +28,12 @@
         "parser": "informator-discovery"
       },
       {
-        "name": "Informator Pomorza — 14–15 ноября 2026",
+        "name": "Informator Pomorza — 21–22 ноября 2026",
         "status": "not-published",
         "parser": "informator-discovery"
       },
       {
-        "name": "Informator Pomorza — 21–22 ноября 2026",
+        "name": "Informator Pomorza — 28–29 ноября 2026",
         "status": "not-published",
         "parser": "informator-discovery"
       },
@@ -49,7 +49,7 @@
       },
       {
         "name": "Eventbrite — события в Gdańsk",
-        "status": 200,
+        "status": 405,
         "parser": "eventbrite-local-only"
       },
       {
@@ -70,129 +70,15 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": "manual-interaction-required",
+        "status": 200,
         "parser": "telegram-mtproto",
-        "events": 0
+        "events": 1
       }
     ],
-    "targetWeekend": "2026-11-14 / 2026-11-15 / 2026-11-21 / 2026-11-22",
-    "removedEvents": 0
+    "targetWeekend": "2026-11-21 / 2026-11-22 / 2026-11-28 / 2026-11-29",
+    "removedEvents": 6
   },
   "events": [
-    {
-      "id": "auto-af92f9e054e2cc05a42dbaec",
-      "title": "Polski Chór Kameralny: koncert \"J. S. Bach. Wielkie motety\"",
-      "date": "2026-11-14",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Polski-Chor-Kameralny-koncert-J-S-Bach-Wielkie-motety,w,43841"
-    },
-    {
-      "id": "auto-e6a7db2b028c10568b3c5360",
-      "title": "Inside Seaside 2026",
-      "date": "2026-11-14",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Inside-Seaside-2026,w,40657"
-    },
-    {
-      "id": "auto-4f43e13f712e2d3928d892b8",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Morena",
-      "date": "2026-11-14",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Morena,w,42979"
-    },
-    {
-      "id": "auto-da93238485108c9c372f9c00",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. VII Dwór",
-      "date": "2026-11-14",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-VII-Dwor,w,42980"
-    },
-    {
-      "id": "auto-3deb34a83191a81bdf8dcd30",
-      "title": "TEDxPolitechnika Gdańska 2026: \"człowiek renesansu\"",
-      "date": "2026-11-14",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/TEDxPolitechnika-Gdanska-2026-czlowiek-renesansu,w,43785"
-    },
-    {
-      "id": "auto-44182a2bf864ca56159a86d0",
-      "title": "Hala Rodzinnie. Kreatywne Warsztaty dla Dzieci",
-      "date": "2026-11-15",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Hala-Rodzinnie-Kreatywne-Warsztaty-dla-Dzieci,w,43857"
-    },
     {
       "id": "auto-82e080cd5684a49bffedaf04",
       "title": "XII Festiwal Gdańscy Pianiści Miastu",
@@ -287,6 +173,82 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Roztanczone-Rodziny-Dzwieko-rytmy-w-ruchu,w,43853"
+    },
+    {
+      "id": "telegram-1001596565827-181212-2026-11-28",
+      "title": "Сексоголики, асексуалы, фетишисты и экспериментаторы, общий сбор!",
+      "date": "2026-11-28",
+      "time": "19:00",
+      "place": "Gdańsk / Trójmiasto",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "Telegram",
+        "автосбор"
+      ],
+      "description": "Сексоголики, асексуалы, фетишисты и экспериментаторы, общий сбор! Это Чёрное Круженое - комедийное шоу, где мы разговариваем только о сексе и популяризируем половое воспитание для взрослых. Для вас новые истории, отзывы и вопросы о секс кейсах от которых зашевелятся волосы или места, где они были. Также мы зачитаем анонимные вопросы от зрителей шоу из красных конвертов. Супер гость шоу - Зоя Пришивалко: сексолог, блогер и просто невероятная женщина! Все гости получают на входе черную кружевную маску в подарок. Следите за нашими новостями на странице в Инстаграм black.lace.comedy и YouTube Черное Кружевное 🗓️ 28.11.2026 🕖 19:00 (двери открыты м 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ Билеты 50 zł по ссылке👇 https://blacklacecomedy.com",
+      "source": "https://t.me/c/596565827/181212"
+    },
+    {
+      "id": "auto-8000effeea2d306c5084e086",
+      "title": "Koncert Wiedeński — W Krainie Czardasza 2",
+      "date": "2026-11-29",
+      "time": "16:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Koncert-Wiedenski-W-Krainie-Czardasza-2,w,43794"
+    },
+    {
+      "id": "auto-72f9a4ad98a4246404f9c369",
+      "title": "Aukcja Młodej Sztuki",
+      "date": "2026-11-29",
+      "time": "17:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Aukcja-Mlodej-Sztuki,w,43761"
+    },
+    {
+      "id": "auto-3ca60f7593c7ad96551e1248",
+      "title": "7. FESTIWAL CINEMATIKA – MUZYKA FILMOWA + KINO",
+      "date": "2026-11-29",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/7-FESTIWAL-CINEMATIKA-MUZYKA-FILMOWA-KINO,w,43820"
     }
   ]
 }
