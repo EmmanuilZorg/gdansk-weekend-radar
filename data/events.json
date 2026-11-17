@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "17.11.2026, 08:56",
+    "lastChecked": "17.11.2026, 21:57",
     "weekend": "21–22 ноября 2026 и 28–29 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 9,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -49,7 +49,7 @@
       },
       {
         "name": "Eventbrite — события в Gdańsk",
-        "status": 200,
+        "status": 405,
         "parser": "eventbrite-local-only"
       },
       {
@@ -79,6 +79,63 @@
     "removedEvents": 0
   },
   "events": [
+    {
+      "id": "auto-794a16d8ba98f9cfdb88a407",
+      "title": "Immersion - jubileusz 55-lecia Akademickiego Chóru Uniwersytetu Gdańskiego",
+      "date": "2026-11-21",
+      "time": "00:34",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Immersion-jubileusz-55-lecia-Akademickiego-Choru-Uniwersytetu-Gdanskiego,w,43882"
+    },
+    {
+      "id": "auto-3067500d36cdf5b6fb94e670",
+      "title": "Duety – proces zamiast dzieła – Magdalena Grzebałkowska & Piotr Pawlak",
+      "date": "2026-11-21",
+      "time": "19:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Duety-proces-zamiast-dziela-Magdalena-Grzebalkowska-Piotr-Pawlak,w,43885"
+    },
+    {
+      "id": "auto-0746794dc924c0118bcc87a9",
+      "title": "Symphonic Beats by Wave Orchestra x TAS",
+      "date": "2026-11-21",
+      "time": "20:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Symphonic-Beats-by-Wave-Orchestra-x-TAS,w,43874"
+    },
     {
       "id": "auto-82e080cd5684a49bffedaf04",
       "title": "XII Festiwal Gdańscy Pianiści Miastu",
@@ -156,6 +213,44 @@
       "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Wrzeszcz,w,42990"
     },
     {
+      "id": "auto-d103c2129ed82d3e9356ffe3",
+      "title": "Jesienne Dni Otwarte na ASP",
+      "date": "2026-11-21",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Jesienne-Dni-Otwarte-na-ASP,w,43879"
+    },
+    {
+      "id": "auto-70d615a08dda390b1452b6df",
+      "title": "Zamęt w zoo: literacka gra terenowa",
+      "date": "2026-11-22",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Zamet-w-zoo-literacka-gra-terenowa,w,43870"
+    },
+    {
       "id": "auto-c88a80edfbb67dab958769af",
       "title": "Roztańczone Rodziny | Dźwięko-rytmy w ruchu",
       "date": "2026-11-22",
@@ -175,6 +270,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Roztanczone-Rodziny-Dzwieko-rytmy-w-ruchu,w,43853"
     },
     {
+      "id": "auto-e55df2e95eb417dea03604e0",
+      "title": "Gdańsk do odkrycia: Stoczniowe wyzwania",
+      "date": "2026-11-22",
+      "time": "14:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Gdansk-do-odkrycia-Stoczniowe-wyzwania,w,43877"
+    },
+    {
       "id": "telegram-1001596565827-181212-2026-11-28",
       "title": "Сексоголики, асексуалы, фетишисты и экспериментаторы, общий сбор!",
       "date": "2026-11-28",
@@ -192,6 +306,63 @@
       ],
       "description": "Сексоголики, асексуалы, фетишисты и экспериментаторы, общий сбор! Это Чёрное Круженое - комедийное шоу, где мы разговариваем только о сексе и популяризируем половое воспитание для взрослых. Для вас новые истории, отзывы и вопросы о секс кейсах от которых зашевелятся волосы или места, где они были. Также мы зачитаем анонимные вопросы от зрителей шоу из красных конвертов. Супер гость шоу - Зоя Пришивалко: сексолог, блогер и просто невероятная женщина! Все гости получают на входе черную кружевную маску в подарок. Следите за нашими новостями на странице в Инстаграм black.lace.comedy и YouTube Черное Кружевное 🗓️ 28.11.2026 🕖 19:00 (двери открыты м 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ Билеты 50 zł по ссылке👇 https://blacklacecomedy.com",
       "source": "https://t.me/c/596565827/181212"
+    },
+    {
+      "id": "auto-ffdcf3d0ef1a2bca0d7f5a89",
+      "title": "Gdańsk do odkrycia: Wielka gra z książką",
+      "date": "2026-11-29",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Gdansk-do-odkrycia-Wielka-gra-z-ksiazka,w,43878"
+    },
+    {
+      "id": "auto-0efadef10e32ee9fe8ded751",
+      "title": "Ucieczka z dosłowności: DoWolności",
+      "date": "2026-11-29",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Ucieczka-z-doslownosci-DoWolnosci,w,43873"
+    },
+    {
+      "id": "auto-9d8f75bd8b096a153dc269e3",
+      "title": "10. Festiwal Filmów Studenckich Cinerama Fest",
+      "date": "2026-11-29",
+      "time": "15:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/10-Festiwal-Filmow-Studenckich-Cinerama-Fest,w,43868"
     },
     {
       "id": "auto-8000effeea2d306c5084e086",
