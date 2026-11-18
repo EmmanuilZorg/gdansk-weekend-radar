@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "17.11.2026, 21:57",
+    "lastChecked": "18.11.2026, 08:31",
     "weekend": "21–22 ноября 2026 и 28–29 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 13,
-    "newEvents": 9,
+    "sourcesChecked": 11,
+    "newEvents": 6,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -24,18 +24,8 @@
       },
       {
         "name": "Informator Pomorza",
-        "status": 200,
-        "parser": "informator-discovery"
-      },
-      {
-        "name": "Informator Pomorza — 21–22 ноября 2026",
-        "status": "not-published",
-        "parser": "informator-discovery"
-      },
-      {
-        "name": "Informator Pomorza — 28–29 ноября 2026",
-        "status": "not-published",
-        "parser": "informator-discovery"
+        "status": "error",
+        "error": "TypeError: fetch failed"
       },
       {
         "name": "Trojmiasto events",
@@ -97,6 +87,63 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Immersion-jubileusz-55-lecia-Akademickiego-Choru-Uniwersytetu-Gdanskiego,w,43882"
+    },
+    {
+      "id": "auto-50db72571af2ac391ebd58f2",
+      "title": "Warsztaty programistyczne PADE_coders",
+      "date": "2026-11-21",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Warsztaty-programistyczne-PADE_coders,w,43895"
+    },
+    {
+      "id": "auto-3d131306d0cff0acbaebce15",
+      "title": "Listopadowa Kawiarenka po Sąsiedzku w Galerii Morena",
+      "date": "2026-11-21",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Listopadowa-Kawiarenka-po-Sasiedzku-w-Galerii-Morena,w,43906"
+    },
+    {
+      "id": "auto-a7344b0f01dfcd29f0af237c",
+      "title": "RE:/002 Równoległe brzmienia – immersyjny koncert w WL4! (RE:CONCERT)",
+      "date": "2026-11-21",
+      "time": "17:30",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/RE-002-Rownolegle-brzmienia-immersyjny-koncert-w-WL4-RE-CONCERT,w,43887"
     },
     {
       "id": "auto-3067500d36cdf5b6fb94e670",
@@ -232,6 +279,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Jesienne-Dni-Otwarte-na-ASP,w,43879"
     },
     {
+      "id": "auto-f3048f5d8eb9a73bf2394b15",
+      "title": "Konferencja Bez Strachu",
+      "date": "2026-11-21",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Konferencja-Bez-Strachu,w,43905"
+    },
+    {
       "id": "auto-70d615a08dda390b1452b6df",
       "title": "Zamęt w zoo: literacka gra terenowa",
       "date": "2026-11-22",
@@ -308,6 +374,25 @@
       "source": "https://t.me/c/596565827/181212"
     },
     {
+      "id": "auto-dbc986e47fc329a01f8a7ff2",
+      "title": "Międzynarodowy Bałtycki Konkurs Pianistyczny",
+      "date": "2026-11-28",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Miedzynarodowy-Baltycki-Konkurs-Pianistyczny,w,43889"
+    },
+    {
       "id": "auto-ffdcf3d0ef1a2bca0d7f5a89",
       "title": "Gdańsk do odkrycia: Wielka gra z książką",
       "date": "2026-11-29",
@@ -382,6 +467,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Koncert-Wiedenski-W-Krainie-Czardasza-2,w,43794"
+    },
+    {
+      "id": "auto-81da22aed0821e663c71463f",
+      "title": "Koncert Andrzejkowy",
+      "date": "2026-11-29",
+      "time": "16:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Koncert-Andrzejkowy,w,43888"
     },
     {
       "id": "auto-72f9a4ad98a4246404f9c369",
