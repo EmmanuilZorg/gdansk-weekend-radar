@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "19.11.2026, 08:27",
+    "lastChecked": "19.11.2026, 21:39",
     "weekend": "21–22 ноября 2026 и 28–29 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 2,
+    "newEvents": 3,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -59,7 +59,7 @@
       },
       {
         "name": "Europejskie Centrum Solidarności — события",
-        "status": 500,
+        "status": 200,
         "parser": "json-ld-events-only"
       },
       {
@@ -70,9 +70,9 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": "manual-interaction-required",
+        "status": 200,
         "parser": "telegram-mtproto",
-        "events": 0
+        "events": 1
       }
     ],
     "targetWeekend": "2026-11-21 / 2026-11-22 / 2026-11-28 / 2026-11-29",
@@ -137,6 +137,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Listopadowa-Kawiarenka-po-Sasiedzku-w-Galerii-Morena,w,43906"
     },
     {
+      "id": "auto-352ca96646b1b350d3239416",
+      "title": "Halo, tu Ziemia! Warsztaty dla dzieci",
+      "date": "2026-11-21",
+      "time": "11:30",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Halo-tu-Ziemia-Warsztaty-dla-dzieci,w,43925"
+    },
+    {
       "id": "auto-a7344b0f01dfcd29f0af237c",
       "title": "RE:/002 Równoległe brzmienia – immersyjny koncert w WL4! (RE:CONCERT)",
       "date": "2026-11-21",
@@ -192,6 +211,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Symphonic-Beats-by-Wave-Orchestra-x-TAS,w,43874"
+    },
+    {
+      "id": "auto-f1b76badf69d3dbb40e6f5d5",
+      "title": "Kobiety Ciechowskiemu: Tribute To Republika",
+      "date": "2026-11-21",
+      "time": "21:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Kobiety-Ciechowskiemu-Tribute-To-Republika,w,43931"
     },
     {
       "id": "auto-82e080cd5684a49bffedaf04",
@@ -420,6 +458,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Bezplatna-joga-dla-seniorow,w,43918"
+    },
+    {
+      "id": "auto-944a732b71c541eee299a6c3",
+      "title": "Janion. Seminarium. Spotkania performatywne",
+      "date": "2026-11-28",
+      "time": "17:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Janion-Seminarium-Spotkania-performatywne,w,43923"
     },
     {
       "id": "telegram-1001596565827-181212-2026-11-28",
