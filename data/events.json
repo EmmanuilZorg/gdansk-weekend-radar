@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "22.11.2026, 07:51",
+    "lastChecked": "22.11.2026, 20:42",
     "weekend": "21–22 ноября 2026 и 28–29 ноября 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 1,
+    "newEvents": 0,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -59,8 +59,8 @@
       },
       {
         "name": "Europejskie Centrum Solidarności — события",
-        "status": 200,
-        "parser": "json-ld-events-only"
+        "status": "error",
+        "error": "TypeError: fetch failed"
       },
       {
         "name": "Budzma Razam — Telegram-бот",
@@ -70,9 +70,9 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": 200,
+        "status": "manual-interaction-required",
         "parser": "telegram-mtproto",
-        "events": 1
+        "events": 0
       }
     ],
     "targetWeekend": "2026-11-21 / 2026-11-22 / 2026-11-28 / 2026-11-29",
