@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "22.11.2026, 20:42",
-    "weekend": "21–22 ноября 2026 и 28–29 ноября 2026",
+    "lastChecked": "23.11.2026, 08:41",
+    "weekend": "28–29 ноября 2026 и 5–6 декабря 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 13,
-    "newEvents": 0,
+    "sourcesChecked": 11,
+    "newEvents": 11,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -24,18 +24,8 @@
       },
       {
         "name": "Informator Pomorza",
-        "status": 200,
-        "parser": "informator-discovery"
-      },
-      {
-        "name": "Informator Pomorza — 21–22 ноября 2026",
-        "status": "not-published",
-        "parser": "informator-discovery"
-      },
-      {
-        "name": "Informator Pomorza — 28–29 ноября 2026",
-        "status": "not-published",
-        "parser": "informator-discovery"
+        "status": "error",
+        "error": "TypeError: fetch failed"
       },
       {
         "name": "Trojmiasto events",
@@ -75,371 +65,10 @@
         "events": 0
       }
     ],
-    "targetWeekend": "2026-11-21 / 2026-11-22 / 2026-11-28 / 2026-11-29",
-    "removedEvents": 0
+    "targetWeekend": "2026-11-28 / 2026-11-29 / 2026-12-05 / 2026-12-06",
+    "removedEvents": 19
   },
   "events": [
-    {
-      "id": "auto-794a16d8ba98f9cfdb88a407",
-      "title": "Immersion - jubileusz 55-lecia Akademickiego Chóru Uniwersytetu Gdańskiego",
-      "date": "2026-11-21",
-      "time": "00:34",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Immersion-jubileusz-55-lecia-Akademickiego-Choru-Uniwersytetu-Gdanskiego,w,43882"
-    },
-    {
-      "id": "auto-50db72571af2ac391ebd58f2",
-      "title": "Warsztaty programistyczne PADE_coders",
-      "date": "2026-11-21",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Warsztaty-programistyczne-PADE_coders,w,43895"
-    },
-    {
-      "id": "auto-3d131306d0cff0acbaebce15",
-      "title": "Listopadowa Kawiarenka po Sąsiedzku w Galerii Morena",
-      "date": "2026-11-21",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Listopadowa-Kawiarenka-po-Sasiedzku-w-Galerii-Morena,w,43906"
-    },
-    {
-      "id": "auto-352ca96646b1b350d3239416",
-      "title": "Halo, tu Ziemia! Warsztaty dla dzieci",
-      "date": "2026-11-21",
-      "time": "11:30",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Halo-tu-Ziemia-Warsztaty-dla-dzieci,w,43925"
-    },
-    {
-      "id": "auto-a7344b0f01dfcd29f0af237c",
-      "title": "RE:/002 Równoległe brzmienia – immersyjny koncert w WL4! (RE:CONCERT)",
-      "date": "2026-11-21",
-      "time": "17:30",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/RE-002-Rownolegle-brzmienia-immersyjny-koncert-w-WL4-RE-CONCERT,w,43887"
-    },
-    {
-      "id": "auto-3067500d36cdf5b6fb94e670",
-      "title": "Duety – proces zamiast dzieła – Magdalena Grzebałkowska & Piotr Pawlak",
-      "date": "2026-11-21",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Duety-proces-zamiast-dziela-Magdalena-Grzebalkowska-Piotr-Pawlak,w,43885"
-    },
-    {
-      "id": "auto-0746794dc924c0118bcc87a9",
-      "title": "Symphonic Beats by Wave Orchestra x TAS",
-      "date": "2026-11-21",
-      "time": "20:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Symphonic-Beats-by-Wave-Orchestra-x-TAS,w,43874"
-    },
-    {
-      "id": "auto-f1b76badf69d3dbb40e6f5d5",
-      "title": "Kobiety Ciechowskiemu: Tribute To Republika",
-      "date": "2026-11-21",
-      "time": "21:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Kobiety-Ciechowskiemu-Tribute-To-Republika,w,43931"
-    },
-    {
-      "id": "auto-82e080cd5684a49bffedaf04",
-      "title": "XII Festiwal Gdańscy Pianiści Miastu",
-      "date": "2026-11-21",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/XII-Festiwal-Gdanscy-Pianisci-Miastu,w,43854"
-    },
-    {
-      "id": "auto-cb17bbd6dcb50e6777bce6f4",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Osowa",
-      "date": "2026-11-21",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Osowa,w,42988"
-    },
-    {
-      "id": "auto-8e877f3e4b664f98c3dee15b",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Brzeźno",
-      "date": "2026-11-21",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Brzezno,w,42989"
-    },
-    {
-      "id": "auto-e0ca4795ff31657abd5648ac",
-      "title": "Szkolenia z bezpieczeństwa i działania w sytuacjach zagrożenia dla mieszkańców. Prowadzone przez Polski Czerwony Krzyż. Wrzeszcz",
-      "date": "2026-11-21",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Szkolenia-z-bezpieczenstwa-i-dzialania-w-sytuacjach-zagrozenia-dla-mieszkancow-Prowadzone-przez-Polski-Czerwony-Krzyz-Wrzeszcz,w,42990"
-    },
-    {
-      "id": "auto-d103c2129ed82d3e9356ffe3",
-      "title": "Jesienne Dni Otwarte na ASP",
-      "date": "2026-11-21",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Jesienne-Dni-Otwarte-na-ASP,w,43879"
-    },
-    {
-      "id": "auto-f3048f5d8eb9a73bf2394b15",
-      "title": "Konferencja Bez Strachu",
-      "date": "2026-11-21",
-      "time": "уточняется",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Konferencja-Bez-Strachu,w,43905"
-    },
-    {
-      "id": "auto-70d615a08dda390b1452b6df",
-      "title": "Zamęt w zoo: literacka gra terenowa",
-      "date": "2026-11-22",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Zamet-w-zoo-literacka-gra-terenowa,w,43870"
-    },
-    {
-      "id": "auto-776547bb28de35c3898fcda9",
-      "title": "Hala Rodzinnie. Kreatywne Warsztaty dla Dzieci",
-      "date": "2026-11-22",
-      "time": "11:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Hala-Rodzinnie-Kreatywne-Warsztaty-dla-Dzieci,w,43893"
-    },
-    {
-      "id": "auto-c88a80edfbb67dab958769af",
-      "title": "Roztańczone Rodziny | Dźwięko-rytmy w ruchu",
-      "date": "2026-11-22",
-      "time": "11:30",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Roztanczone-Rodziny-Dzwieko-rytmy-w-ruchu,w,43853"
-    },
-    {
-      "id": "auto-e55df2e95eb417dea03604e0",
-      "title": "Gdańsk do odkrycia: Stoczniowe wyzwania",
-      "date": "2026-11-22",
-      "time": "14:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Gdansk-do-odkrycia-Stoczniowe-wyzwania,w,43877"
-    },
-    {
-      "id": "auto-60c70527b6100e92d2e86f35",
-      "title": "Muzyczna podróż przez epoki i kraje",
-      "date": "2026-11-22",
-      "time": "19:00",
-      "place": "Gdańsk",
-      "area": "Gdańsk / Trójmiasto",
-      "free": false,
-      "price": "уточняется",
-      "solo": true,
-      "outdoor": false,
-      "registration": false,
-      "tags": [
-        "городской календарь",
-        "автосбор"
-      ],
-      "description": "Официальная карточка события на портале города Гданьска.",
-      "source": "https://www.gdansk.pl/wydarzenia/Muzyczna-podroz-przez-epoki-i-kraje,w,43911"
-    },
     {
       "id": "auto-3a0661f100a115bd771c8f9a",
       "title": "Bezpłatna joga dla seniorów",
@@ -705,6 +334,215 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/7-FESTIWAL-CINEMATIKA-MUZYKA-FILMOWA-KINO,w,43820"
+    },
+    {
+      "id": "auto-e1776f09738c9be557b23d23",
+      "title": "JANUSZ RADEK – SERWUS MADONNA",
+      "date": "2026-12-05",
+      "time": "18:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/JANUSZ-RADEK-SERWUS-MADONNA,w,43818"
+    },
+    {
+      "id": "auto-8e38ebd39f963905eeef3b46",
+      "title": "Światłość ze światłości. Koncert z dyrygentem gościnnym Stephenem Laytonem",
+      "date": "2026-12-05",
+      "time": "20:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Swiatlosc-ze-swiatlosci-Koncert-z-dyrygentem-goscinnym-Stephenem-Laytonem,w,43869"
+    },
+    {
+      "id": "auto-1666767b1a3ab47c80a5fe49",
+      "title": "Międzynarodowy Bałtycki Konkurs Pianistyczny",
+      "date": "2026-12-05",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Miedzynarodowy-Baltycki-Konkurs-Pianistyczny,w,43889"
+    },
+    {
+      "id": "auto-4b64aed340753c244b8aeeb2",
+      "title": "Charytatywny Jarmark Św. Mikołaja",
+      "date": "2026-12-05",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Charytatywny-Jarmark-Sw-Mikolaja,w,43921"
+    },
+    {
+      "id": "auto-1483dedb718dd196f2108cba",
+      "title": "Świąteczna pracownia | Mikołajki w ECS",
+      "date": "2026-12-06",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Swiateczna-pracownia-Mikolajki-w-ECS,w,43898"
+    },
+    {
+      "id": "auto-492759c71729b0763a25d071",
+      "title": "Teatr w blasku choinki | Mikołajki ECS",
+      "date": "2026-12-06",
+      "time": "12:30",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Teatr-w-blasku-choinki-Mikolajki-ECS,w,43899"
+    },
+    {
+      "id": "auto-8913269f67d4ba1a356f14f6",
+      "title": "Ceramiczne skrzaty | Mikołajki ECS",
+      "date": "2026-12-06",
+      "time": "12:30",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Ceramiczne-skrzaty-Mikolajki-ECS,w,43900"
+    },
+    {
+      "id": "auto-b86c63d0275fc0702fbdfec3",
+      "title": "Piernikowa rodzina | Mikołajki w ECS",
+      "date": "2026-12-06",
+      "time": "12:30",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Piernikowa-rodzina-Mikolajki-w-ECS,w,43901"
+    },
+    {
+      "id": "auto-74072dcf5640c81d5fc5e872",
+      "title": "Magiczna Gwiazdka zwierzaków | Mikołajki w ECS",
+      "date": "2026-12-06",
+      "time": "13:30",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Magiczna-Gwiazdka-zwierzakow-Mikolajki-w-ECS,w,43902"
+    },
+    {
+      "id": "auto-5e3d6df42d35d571764fa5a4",
+      "title": "Charytatywny Jarmark Św. Mikołaja",
+      "date": "2026-12-06",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Charytatywny-Jarmark-Sw-Mikolaja,w,43921"
+    },
+    {
+      "id": "auto-4657a02938eaa75c2fa09924",
+      "title": "35. Euroshorts 2026",
+      "date": "2026-12-06",
+      "time": "уточняется",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/35-Euroshorts-2026,w,43919"
     }
   ]
 }
