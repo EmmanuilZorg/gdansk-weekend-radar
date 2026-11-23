@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "23.11.2026, 08:41",
+    "lastChecked": "24.11.2026, 00:55",
     "weekend": "28–29 ноября 2026 и 5–6 декабря 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 11,
-    "newEvents": 11,
+    "sourcesChecked": 13,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -24,8 +24,18 @@
       },
       {
         "name": "Informator Pomorza",
-        "status": "error",
-        "error": "TypeError: fetch failed"
+        "status": 200,
+        "parser": "informator-discovery"
+      },
+      {
+        "name": "Informator Pomorza — 28–29 ноября 2026",
+        "status": "not-published",
+        "parser": "informator-discovery"
+      },
+      {
+        "name": "Informator Pomorza — 5–6 декабря 2026",
+        "status": "not-published",
+        "parser": "informator-discovery"
       },
       {
         "name": "Trojmiasto events",
@@ -49,8 +59,8 @@
       },
       {
         "name": "Europejskie Centrum Solidarności — события",
-        "status": "error",
-        "error": "TypeError: fetch failed"
+        "status": 200,
+        "parser": "json-ld-events-only"
       },
       {
         "name": "Budzma Razam — Telegram-бот",
@@ -60,13 +70,13 @@
       },
       {
         "name": "Закрытый Telegram-канал — пост 14190",
-        "status": "manual-interaction-required",
+        "status": 200,
         "parser": "telegram-mtproto",
-        "events": 0
+        "events": 1
       }
     ],
     "targetWeekend": "2026-11-28 / 2026-11-29 / 2026-12-05 / 2026-12-06",
-    "removedEvents": 19
+    "removedEvents": 0
   },
   "events": [
     {
@@ -429,6 +439,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Swiateczna-pracownia-Mikolajki-w-ECS,w,43898"
+    },
+    {
+      "id": "telegram-1001596565827-182320-2026-12-06",
+      "title": "✨ СЕНСОРНАЯ ПЕРЕЗАГРУЗКА ✨",
+      "date": "2026-12-06",
+      "time": "12:00",
+      "place": "Gdańsk / Trójmiasto",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": true,
+      "tags": [
+        "Telegram",
+        "автосбор"
+      ],
+      "description": "✨ СЕНСОРНАЯ ПЕРЕЗАГРУЗКА ✨ Приглашаею на уютную женскую встречу в компании интегративного нутрициолога и ароматерапевта! Поговорим об анатомии удовольствия и попробуем разобраться, где же находится та самая «панель управления» нашим восприятием жизни. Разбудим все пять чувств с помощью простых, но действенных сенсорных практик. Минимум теории — максимум ощущений и открытий! ☕️ Вас ждут праздничная атмосфера, душевные разговоры, полезные вкусняшки и согревающие напитки. Не обойдётся и без приятных бонусов! Порадуйте своего внутреннего ребёнка и откройте привычный мир заново! 💫 📅 Дата: 6 декабря 2026 года ⏰️ Время: 12:00 📍 Место: Łódzka 65, Gdańsk 🎟 Стоимость участия: 150 zł 📩 Запись в личных сообщениях Встреча камерная, количество мест ограничено!",
+      "source": "https://t.me/c/596565827/182320"
     },
     {
       "id": "auto-492759c71729b0763a25d071",
