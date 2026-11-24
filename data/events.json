@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastChecked": "24.11.2026, 00:55",
+    "lastChecked": "24.11.2026, 10:55",
     "weekend": "28–29 ноября 2026 и 5–6 декабря 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
@@ -287,6 +287,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Aukcja-Mlodej-Sztuki,w,43761"
+    },
+    {
+      "id": "auto-1c5131d23c212d8ad1d93dc0",
+      "title": "Aukcja Przelew Sztuki",
+      "date": "2026-11-29",
+      "time": "17:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Aukcja-Przelew-Sztuki,w,43946"
     },
     {
       "id": "auto-caa0b5f7080aff565845964d",
