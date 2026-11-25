@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "24.11.2026, 23:28",
+    "lastChecked": "25.11.2026, 09:37",
     "weekend": "28–29 ноября 2026 и 5–6 декабря 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 3,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -72,7 +72,7 @@
         "name": "Закрытый Telegram-канал — пост 14190",
         "status": 200,
         "parser": "telegram-mtproto",
-        "events": 1
+        "events": 2
       }
     ],
     "targetWeekend": "2026-11-28 / 2026-11-29 / 2026-12-05 / 2026-12-06",
@@ -135,6 +135,25 @@
       ],
       "description": "Сексоголики, асексуалы, фетишисты и экспериментаторы, общий сбор! Это Чёрное Круженое - комедийное шоу, где мы разговариваем только о сексе и популяризируем половое воспитание для взрослых. Для вас новые истории, отзывы и вопросы о секс кейсах от которых зашевелятся волосы или места, где они были. Также мы зачитаем анонимные вопросы от зрителей шоу из красных конвертов. Супер гость шоу - Зоя Пришивалко: сексолог, блогер и просто невероятная женщина! Все гости получают на входе черную кружевную маску в подарок. Следите за нашими новостями на странице в Инстаграм black.lace.comedy и YouTube Черное Кружевное 🗓️ 28.11.2026 🕖 19:00 (двери открыты м 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ Билеты 50 zł по ссылке👇 https://blacklacecomedy.com",
       "source": "https://t.me/c/596565827/181212"
+    },
+    {
+      "id": "telegram-1001596565827-182551-2026-11-28",
+      "title": "Черное Кружевное это комеди шоу популяризирующее половое воспитание для взрослых",
+      "date": "2026-11-28",
+      "time": "19:00",
+      "place": "Gdańsk / Trójmiasto",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "Telegram",
+        "автосбор"
+      ],
+      "description": "Черное Кружевное это комеди шоу популяризирующее половое воспитание для взрослых Следите за нашими новостями на странице в Инстаграм black.lace.comedy и YouTube \"Черное Кружевное\" 🗓️ 28.11.2026 🕖 19:00 (двери открыты с 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ Билеты 50 zł по ссылке👇 https://blacklacecomedy.com",
+      "source": "https://t.me/c/596565827/182551"
     },
     {
       "id": "auto-800f6cc240a88eaafaaf0bc2",
@@ -211,6 +230,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Ucieczka-z-doslownosci-DoWolnosci,w,43873"
+    },
+    {
+      "id": "auto-596dea888ddcfb1dd5c5b5a5",
+      "title": "Hala Rodzinnie. Kreatywne Warsztaty dla Dzieci",
+      "date": "2026-11-29",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Hala-Rodzinnie-Kreatywne-Warsztaty-dla-Dzieci,w,43953"
     },
     {
       "id": "auto-9d8f75bd8b096a153dc269e3",
@@ -458,6 +496,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Swiateczna-pracownia-Mikolajki-w-ECS,w,43898"
+    },
+    {
+      "id": "auto-7ab0c6f712cd679bb611ffa3",
+      "title": "Zimowe Klimaty",
+      "date": "2026-12-06",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Zimowe-Klimaty,w,43950"
     },
     {
       "id": "telegram-1001596565827-182320-2026-12-06",
