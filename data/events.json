@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "26.11.2026, 09:20",
+    "lastChecked": "26.11.2026, 22:33",
     "weekend": "28–29 ноября 2026 и 5–6 декабря 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
     "sourcesChecked": 13,
-    "newEvents": 0,
+    "newEvents": 6,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -72,13 +72,32 @@
         "name": "Закрытый Telegram-канал — пост 14190",
         "status": 200,
         "parser": "telegram-mtproto",
-        "events": 2
+        "events": 1
       }
     ],
     "targetWeekend": "2026-11-28 / 2026-11-29 / 2026-12-05 / 2026-12-06",
     "removedEvents": 0
   },
   "events": [
+    {
+      "id": "auto-1e77e6cd014e4f8f3e35bfd5",
+      "title": "Zrób sobie przerwę na zdrowie: bezpłatne badania kręgosłupa",
+      "date": "2026-11-28",
+      "time": "10:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Zrob-sobie-przerwe-na-zdrowie-bezplatne-badania-kregoslupa,w,43965"
+    },
     {
       "id": "auto-3a0661f100a115bd771c8f9a",
       "title": "Bezpłatna joga dla seniorów",
@@ -154,6 +173,25 @@
       ],
       "description": "Черное Кружевное это комеди шоу популяризирующее половое воспитание для взрослых Следите за нашими новостями на странице в Инстаграм black.lace.comedy и YouTube \"Черное Кружевное\" 🗓️ 28.11.2026 🕖 19:00 (двери открыты с 18:30) 🎙️ Velvet karaoke club 📍 Wajdeloty 13, Gdańsk 🎟️ Билеты 50 zł по ссылке👇 https://blacklacecomedy.com",
       "source": "https://t.me/c/596565827/182551"
+    },
+    {
+      "id": "auto-4b591061b928f3faa5cd181b",
+      "title": "Premiera spektaklu \"Testament psa\"",
+      "date": "2026-11-28",
+      "time": "20:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Premiera-spektaklu-Testament-psa,w,43956"
     },
     {
       "id": "auto-800f6cc240a88eaafaaf0bc2",
@@ -403,6 +441,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/7-FESTIWAL-CINEMATIKA-MUZYKA-FILMOWA-KINO,w,43820"
     },
     {
+      "id": "auto-fbb7830c5246b1f520949294",
+      "title": "Mikołajki w Kinie IKM: Ryjówka Przeznaczenia",
+      "date": "2026-12-05",
+      "time": "11:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Mikolajki-w-Kinie-IKM-Ryjowka-Przeznaczenia,w,43955"
+    },
+    {
       "id": "auto-e1776f09738c9be557b23d23",
       "title": "JANUSZ RADEK – SERWUS MADONNA",
       "date": "2026-12-05",
@@ -593,6 +650,25 @@
       "source": "https://www.gdansk.pl/wydarzenia/Piernikowa-rodzina-Mikolajki-w-ECS,w,43901"
     },
     {
+      "id": "auto-eb2e54937d9ef29fe3cba0cc",
+      "title": "\"Szelmostwa Lisa Witalisa\" z tłumaczeniem na ukraiński",
+      "date": "2026-12-06",
+      "time": "13:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Szelmostwa-Lisa-Witalisa-z-tlumaczeniem-na-ukrainski,w,43962"
+    },
+    {
       "id": "auto-74072dcf5640c81d5fc5e872",
       "title": "Magiczna Gwiazdka zwierzaków | Mikołajki w ECS",
       "date": "2026-12-06",
@@ -610,6 +686,44 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Magiczna-Gwiazdka-zwierzakow-Mikolajki-w-ECS,w,43902"
+    },
+    {
+      "id": "auto-1f0e69fd89ff947946e69ea4",
+      "title": "Czytanie mikołajkowe z widokiem na Jarmark Bożonarodzeniowy",
+      "date": "2026-12-06",
+      "time": "16:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Czytanie-mikolajkowe-z-widokiem-na-Jarmark-Bozonarodzeniowy,w,43960"
+    },
+    {
+      "id": "auto-6219f6aea8eaf2e0e6d38199",
+      "title": "Mikołajkowa Aukcja Charytatywna ASP \"Razem możemy więcej\"",
+      "date": "2026-12-06",
+      "time": "18:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/Mikolajkowa-Aukcja-Charytatywna-ASP-Razem-mozemy-wiecej,w,43963"
     },
     {
       "id": "auto-5e3d6df42d35d571764fa5a4",
