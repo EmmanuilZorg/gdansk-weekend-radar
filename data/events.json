@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastChecked": "27.11.2026, 09:37",
+    "lastChecked": "27.11.2026, 22:18",
     "weekend": "28–29 ноября 2026 и 5–6 декабря 2026",
     "lastRun": "github-actions",
     "message": "Подборка собрана из открытых источников. Автоматический сбор обновляет события и не заменяет проверку первоисточника.",
-    "sourcesChecked": 11,
-    "newEvents": 0,
+    "sourcesChecked": 13,
+    "newEvents": 1,
     "sourceStatus": [
       {
         "name": "Официальный календарь Gdańsk.pl",
@@ -24,8 +24,18 @@
       },
       {
         "name": "Informator Pomorza",
-        "status": "error",
-        "error": "TypeError: fetch failed"
+        "status": 200,
+        "parser": "informator-discovery"
+      },
+      {
+        "name": "Informator Pomorza — 28–29 ноября 2026",
+        "status": "not-published",
+        "parser": "informator-discovery"
+      },
+      {
+        "name": "Informator Pomorza — 5–6 декабря 2026",
+        "status": "not-published",
+        "parser": "informator-discovery"
       },
       {
         "name": "Trojmiasto events",
@@ -657,6 +667,25 @@
       ],
       "description": "Официальная карточка события на портале города Гданьска.",
       "source": "https://www.gdansk.pl/wydarzenia/Szelmostwa-Lisa-Witalisa-z-tlumaczeniem-na-ukrainski,w,43962"
+    },
+    {
+      "id": "auto-79738ca70392690f3fa1d85b",
+      "title": "III Osowski Jarmark Świąteczny",
+      "date": "2026-12-06",
+      "time": "13:00",
+      "place": "Gdańsk",
+      "area": "Gdańsk / Trójmiasto",
+      "free": false,
+      "price": "уточняется",
+      "solo": true,
+      "outdoor": false,
+      "registration": false,
+      "tags": [
+        "городской календарь",
+        "автосбор"
+      ],
+      "description": "Официальная карточка события на портале города Гданьска.",
+      "source": "https://www.gdansk.pl/wydarzenia/III-Osowski-Jarmark-Swiateczny,w,43969"
     },
     {
       "id": "auto-74072dcf5640c81d5fc5e872",
